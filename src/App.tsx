@@ -9,14 +9,14 @@ export default function App() {
         <div className="space-x-2">
           <button
             aria-pressed={mode === 'edit'}
-            className="px-3 py-1 border rounded"
+            className="px-3 py-1 border rounded-sm"
             onClick={() => setMode('edit')}
           >
             Edit
           </button>
           <button
             aria-pressed={mode === 'preview'}
-            className="px-3 py-1 border rounded"
+            className="px-3 py-1 border rounded-sm"
             onClick={() => setMode('preview')}
           >
             Preview

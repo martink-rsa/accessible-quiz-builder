@@ -8,7 +8,7 @@ assignees: martink-rsa
 
 ## Details
 
-The initial project must be setup so that it's working locally.
+Details
 
 ## User story
 
