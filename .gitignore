@@ -21,6 +21,7 @@ out/
 coverage/
 *.lcov
 .nyc_output/
+test-results/
 
 # IDE and editors
 .vscode/
