@@ -4,7 +4,6 @@ about: A new ticket for the Accessible Quiz project
 title: ''
 labels: ''
 assignees: martink-rsa
-
 ---
 
 ## Details
@@ -13,11 +12,11 @@ The initial project must be setup so that it's working locally.
 
 ## User story
 
-**As a** 
+**As a**
 
-**I want** 
+**I want**
 
-**So that** 
+**So that**
 
 ## Acceptance criteria
 
@@ -26,9 +25,9 @@ The initial project must be setup so that it's working locally.
 ## Screenshots
 
 | Details | Screenshot |
-| ------- | ----------- |
-| N/A       |                     |
-|              |                     |
+| ------- | ---------- |
+| N/A     |            |
+|         |            |
 
 ## QA
 
