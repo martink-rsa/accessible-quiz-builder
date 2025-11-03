@@ -1,16 +1,26 @@
 {
   "name": "accessible-quiz",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.1",
   "type": "module",
+  "license": "MIT",
+  "author": "Martin Kruger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martink-rsa/accessible-quiz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martink-rsa/accessible-quiz/issues"
+  },
+  "homepage": "https://github.com/martink-rsa/accessible-quiz#readme",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
+    "dev": "vite",
     "format": "prettier --write .",
     "preview": "vite preview",
     "test": "jest --runInBand",
-    "test:watch": "jest --watch",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "react": "^18.3.1",
