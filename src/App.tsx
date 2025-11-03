@@ -7,7 +7,11 @@ export default function App() {
       <header className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold">Accessible Quiz Builder (React)</h1>
         <div className="space-x-2">
-          <button aria-pressed={mode === 'edit'} className="px-3 py-1 border rounded" onClick={() => setMode('edit')}>
+          <button
+            aria-pressed={mode === 'edit'}
+            className="px-3 py-1 border rounded"
+            onClick={() => setMode('edit')}
+          >
             Edit
           </button>
           <button
@@ -21,9 +25,13 @@ export default function App() {
       </header>
       <section aria-live="polite">
         {mode === 'edit' ? (
-          <p className="text-sm text-gray-600">Edit mode placeholder — build your quiz editor here.</p>
+          <p className="text-sm text-gray-600">
+            Edit mode placeholder — build your quiz editor here.
+          </p>
         ) : (
-          <p className="text-sm text-gray-600">Preview mode placeholder — render your quiz here.</p>
+          <p className="text-sm text-gray-600">
+            Preview mode placeholder — render your quiz here.
+          </p>
         )}
       </section>
     </main>
