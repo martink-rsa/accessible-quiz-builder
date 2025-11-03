@@ -1,5 +1,5 @@
 {
-  "name": "accessible-quiz",
+  "name": "accessible-quiz-builder",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -7,12 +7,12 @@
   "author": "Martin Kruger",
   "repository": {
     "type": "git",
-    "url": "https://github.com/martink-rsa/accessible-quiz.git"
+    "url": "https://github.com/martink-rsa/accessible-quiz-builder.git"
   },
   "bugs": {
-    "url": "https://github.com/martink-rsa/accessible-quiz/issues"
+    "url": "https://github.com/martink-rsa/accessible-quiz-builder/issues"
   },
-  "homepage": "https://github.com/martink-rsa/accessible-quiz#readme",
+  "homepage": "https://github.com/martink-rsa/accessible-quiz-builder#readme",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
