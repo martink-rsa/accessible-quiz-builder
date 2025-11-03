@@ -9,6 +9,7 @@ const config: Config = {
     '^.+.(css|less|scss)$': 'identity-obj-proxy',
   },
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+  testPathIgnorePatterns: ['/node_modules/', '/tests-e2e/'],
 };
 
 export default config;
