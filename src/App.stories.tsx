@@ -16,7 +16,6 @@ const meta: Meta<typeof App> = {
   parameters: {
     layout: 'fullscreen',
     a11y: {
-      // Run accessibility checks on this component
       config: {
         rules: [
           {
@@ -44,16 +43,8 @@ const meta: Meta<typeof App> = {
 export default meta;
 type Story = StoryObj<typeof App>;
 
-/**
- * The default state of the App component, showing the Edit mode.
- * Users can toggle between Edit and Preview modes using the accessible buttons.
- */
 export const Default: Story = {};
 
-/**
- * This story shows the same component but can be used to test
- * different user interactions and states.
- */
 export const Interactive: Story = {
   parameters: {
     docs: {
