@@ -1,3 +1,6 @@
+// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
+import storybook from 'eslint-plugin-storybook';
+
 import js from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
@@ -5,7 +8,7 @@ import pluginReact from 'eslint-plugin-react';
 
 export default [
   {
-    ignores: ['dist/**'],
+    ignores: ['dist/**', 'storybook-static/**'],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
@@ -22,6 +25,7 @@ export default [
     },
     rules: {
       '@typescript-eslint/no-unused-vars': 'error',
+      'react/no-unescaped-entities': 'off',
     },
   },
   {
@@ -31,4 +35,5 @@ export default [
       globals: globals.node,
     },
   },
+  ...storybook.configs['flat/recommended'],
 ];

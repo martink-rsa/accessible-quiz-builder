@@ -47,3 +47,6 @@ logs/
 
 # AI
 .claude
+
+*storybook.log
+storybook-static
