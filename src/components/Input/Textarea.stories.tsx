@@ -9,7 +9,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Accessible textarea component for multi-line text input with label, error states, and help text. Follows WCAG 2.1 Level AA guidelines with proper label association, error handling, and keyboard navigation support.',
+          'Accessible textarea component for multi-line text input with label, error states, and help text. Follows WCAG 2.2 Level AA guidelines with proper label association, error handling, and keyboard navigation support.',
       },
     },
   },

@@ -8,7 +8,7 @@ import App from './App';
  * - Accessible toggle buttons with aria-pressed attributes
  * - Mode switching between Edit and Preview
  * - Aria-live regions for dynamic content updates
- * - WCAG 2.1 Level AA compliance
+ * - WCAG 2.2 Level AA compliance
  */
 const meta: Meta<typeof App> = {
   title: 'App',

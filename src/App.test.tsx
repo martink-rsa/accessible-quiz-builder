@@ -6,9 +6,21 @@ import { renderAndCheckA11y, checkA11y } from './test-utils';
 
 test('toggles edit/preview modes', () => {
   render(<App />);
-  expect(screen.getByText(/edit mode placeholder/i)).toBeInTheDocument();
+
+  // In edit mode, should see quiz title input
+  expect(screen.getByLabelText(/quiz title/i)).toBeInTheDocument();
+  expect(
+    screen.getByRole('button', { name: /add first question/i }),
+  ).toBeInTheDocument();
+
+  // Switch to preview mode
   fireEvent.click(screen.getByRole('button', { name: /preview/i }));
-  expect(screen.getByText(/preview mode placeholder/i)).toBeInTheDocument();
+
+  // In preview mode, should see preview content
+  expect(
+    screen.getByText(/No questions in this quiz yet/i),
+  ).toBeInTheDocument();
+  expect(screen.getByText(/Add questions in Edit mode/i)).toBeInTheDocument();
 });
 
 // Example 1: Using the renderAndCheckA11y helper for automatic accessibility testing

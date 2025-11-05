@@ -114,6 +114,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         disabled={isDisabled}
         aria-disabled={isDisabled}
         className={classes}
+        style={{ cursor: 'pointer' }}
         {...props}
       >
         {loading && (
