@@ -7,7 +7,9 @@ import { Input } from './components/Input';
 import { Textarea } from './components/Input/Textarea';
 import { Button } from './components/Button';
 import { ButtonGroup } from './components/ButtonGroup';
-import { Edit, Eye, Trash2, Undo2, Redo2 } from 'lucide-react';
+import { PublishModal } from './components/PublishModal/PublishModal';
+import { Edit, Eye, Trash2, Undo2, Redo2, Send } from 'lucide-react';
+import { isQuizValid } from './utils/validation';
 import type { Quiz } from './types/quiz';
 
 const STORAGE_KEY = 'accessible-quiz-builder-quiz';
@@ -15,6 +17,7 @@ const STORAGE_KEY = 'accessible-quiz-builder-quiz';
 export default function App() {
   const [mode, setMode] = useState<'edit' | 'preview'>('edit');
   const [showClearConfirm, setShowClearConfirm] = useState(false);
+  const [showPublishModal, setShowPublishModal] = useState(false);
 
   // Initialize quiz from localStorage or create new
   const [storedQuiz, setStoredQuiz] = useLocalStorage<Quiz | null>(
@@ -145,6 +148,16 @@ export default function App() {
                   </Button>
                 </div>
               )}
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={() => setShowPublishModal(true)}
+                disabled={quiz.questions.length === 0 || !isQuizValid(quiz)}
+                aria-label="Publish quiz"
+              >
+                <Send className="w-4 h-4" />
+                Publish
+              </Button>
             </div>
           )}
         </header>
@@ -203,6 +216,13 @@ export default function App() {
           </p>
         </footer>
       </div>
+
+      {/* Publish Modal */}
+      <PublishModal
+        isOpen={showPublishModal}
+        onClose={() => setShowPublishModal(false)}
+        quizTitle={quiz.title}
+      />
     </main>
   );
 }
