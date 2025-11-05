@@ -6,6 +6,7 @@ import { QuizPreview } from './components/QuizPreview';
 import { Input } from './components/Input';
 import { Textarea } from './components/Input/Textarea';
 import { Button } from './components/Button';
+import { ButtonGroup } from './components/ButtonGroup';
 import { Edit, Eye, Trash2, Undo2, Redo2 } from 'lucide-react';
 import type { Quiz } from './types/quiz';
 
@@ -65,7 +66,7 @@ export default function App() {
             <h1 className="text-3xl font-bold text-neutral-900">
               Accessible Quiz Builder
             </h1>
-            <div className="flex gap-2">
+            <ButtonGroup aria-label="View mode">
               <Button
                 variant={mode === 'edit' ? 'primary' : 'ghost'}
                 onClick={() => setMode('edit')}
@@ -82,7 +83,7 @@ export default function App() {
                 <Eye className="w-4 h-4" />
                 Preview
               </Button>
-            </div>
+            </ButtonGroup>
           </div>
 
           {/* Edit Mode Controls */}
