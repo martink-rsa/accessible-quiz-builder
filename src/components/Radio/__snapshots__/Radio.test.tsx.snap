@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Radio Snapshots should match snapshot in a radio group 1`] = `
+<div>
+  <div>
+    <div
+      class=""
+    >
+      <div
+        class="flex items-start"
+      >
+        <input
+          class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+          id="_r_1n_"
+          name="difficulty"
+          type="radio"
+          value="easy"
+        />
+        <label
+          class="ml-2 block text-base text-neutral-700 cursor-pointer"
+          for="_r_1n_"
+        >
+          Easy
+        </label>
+      </div>
+    </div>
+    <div
+      class=""
+    >
+      <div
+        class="flex items-start"
+      >
+        <input
+          checked=""
+          class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+          id="_r_1o_"
+          name="difficulty"
+          readonly=""
+          type="radio"
+          value="medium"
+        />
+        <label
+          class="ml-2 block text-base text-neutral-700 cursor-pointer"
+          for="_r_1o_"
+        >
+          Medium
+        </label>
+      </div>
+    </div>
+    <div
+      class=""
+    >
+      <div
+        class="flex items-start"
+      >
+        <input
+          class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+          id="_r_1p_"
+          name="difficulty"
+          type="radio"
+          value="hard"
+        />
+        <label
+          class="ml-2 block text-base text-neutral-700 cursor-pointer"
+          for="_r_1p_"
+        >
+          Hard
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Radio Snapshots should match snapshot when checked 1`] = `
+<div
+  class=""
+>
+  <div
+    class="flex items-start"
+  >
+    <input
+      checked=""
+      class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+      id="_r_1j_"
+      name="test"
+      readonly=""
+      type="radio"
+      value="checked"
+    />
+    <label
+      class="ml-2 block text-base text-neutral-700 cursor-pointer"
+      for="_r_1j_"
+    >
+      Checked
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Radio Snapshots should match snapshot when disabled 1`] = `
+<div
+  class=""
+>
+  <div
+    class="flex items-start"
+  >
+    <input
+      class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-neutral-100 text-neutral-400 cursor-not-allowed "
+      disabled=""
+      id="_r_1k_"
+      name="test"
+      type="radio"
+      value="disabled"
+    />
+    <label
+      class="ml-2 block text-base text-neutral-700 cursor-not-allowed opacity-60"
+      for="_r_1k_"
+    >
+      Disabled
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Radio Snapshots should match snapshot with all sizes 1`] = `
+<div>
+  <div>
+    <div
+      class=""
+    >
+      <div
+        class="flex items-start"
+      >
+        <input
+          class="w-4 h-4 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+          id="_r_1g_"
+          name="test"
+          type="radio"
+          value="sm"
+        />
+        <label
+          class="ml-2 block text-sm text-neutral-700 cursor-pointer"
+          for="_r_1g_"
+        >
+          Small
+        </label>
+      </div>
+    </div>
+    <div
+      class=""
+    >
+      <div
+        class="flex items-start"
+      >
+        <input
+          class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+          id="_r_1h_"
+          name="test"
+          type="radio"
+          value="md"
+        />
+        <label
+          class="ml-2 block text-base text-neutral-700 cursor-pointer"
+          for="_r_1h_"
+        >
+          Medium
+        </label>
+      </div>
+    </div>
+    <div
+      class=""
+    >
+      <div
+        class="flex items-start"
+      >
+        <input
+          class="w-6 h-6 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+          id="_r_1i_"
+          name="test"
+          type="radio"
+          value="lg"
+        />
+        <label
+          class="ml-2 block text-lg text-neutral-700 cursor-pointer"
+          for="_r_1i_"
+        >
+          Large
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Radio Snapshots should match snapshot with default props 1`] = `
+<div
+  class=""
+>
+  <div
+    class="flex items-start"
+  >
+    <input
+      class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+      id="_r_1f_"
+      name="test"
+      type="radio"
+      value="easy"
+    />
+    <label
+      class="ml-2 block text-base text-neutral-700 cursor-pointer"
+      for="_r_1f_"
+    >
+      Easy
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Radio Snapshots should match snapshot with error 1`] = `
+<div
+  class=""
+>
+  <div
+    class="flex items-start"
+  >
+    <input
+      aria-describedby="_r_1l_-error"
+      class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-destructive-500 focus:ring-destructive-500 text-destructive-600 bg-white cursor-pointer "
+      id="_r_1l_"
+      name="test"
+      type="radio"
+      value="opt"
+    />
+    <label
+      class="ml-2 block text-base text-neutral-700 cursor-pointer"
+      for="_r_1l_"
+    >
+      Option
+    </label>
+  </div>
+  <p
+    class="mt-1.5 text-sm text-destructive-600"
+    id="_r_1l_-error"
+    role="alert"
+  >
+    Please select
+  </p>
+</div>
+`;
+
+exports[`Radio Snapshots should match snapshot with help text 1`] = `
+<div
+  class=""
+>
+  <div
+    class="flex items-start"
+  >
+    <input
+      aria-describedby="_r_1m_-help"
+      class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer "
+      id="_r_1m_"
+      name="test"
+      type="radio"
+      value="sub"
+    />
+    <label
+      class="ml-2 block text-base text-neutral-700 cursor-pointer"
+      for="_r_1m_"
+    >
+      Subscribe
+    </label>
+  </div>
+  <p
+    class="mt-1.5 text-sm text-neutral-600"
+    id="_r_1m_-help"
+  >
+    Optional subscription
+  </p>
+</div>
+`;

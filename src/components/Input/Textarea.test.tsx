@@ -290,4 +290,54 @@ describe('Textarea', () => {
       expect(ref.mock.calls[0][0]).toBeInstanceOf(HTMLTextAreaElement);
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot with default props', () => {
+      const { container } = render(<Textarea label="Comments" />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot when disabled', () => {
+      const { container } = render(<Textarea label="Disabled" disabled />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with error', () => {
+      const { container } = render(
+        <Textarea label="Description" error="Description is required" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with help text', () => {
+      const { container } = render(
+        <Textarea label="Bio" helpText="Tell us about yourself" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot when required', () => {
+      const { container } = render(<Textarea label="Required" required />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with value', () => {
+      const { container } = render(
+        <Textarea label="Notes" value="Some notes here" readOnly />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with placeholder', () => {
+      const { container } = render(
+        <Textarea label="Comments" placeholder="Enter your comments here" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with custom rows', () => {
+      const { container } = render(<Textarea label="Large" rows={10} />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

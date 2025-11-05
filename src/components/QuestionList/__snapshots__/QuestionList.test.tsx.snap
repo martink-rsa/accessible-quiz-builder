@@ -1,0 +1,559 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`QuestionList Snapshots should match snapshot with empty list 1`] = `
+<div
+  class="space-y-6"
+>
+  <div
+    class="text-center py-12 border-2 border-dashed border-neutral-300 rounded-lg"
+  >
+    <p
+      class="text-neutral-600 mb-4"
+    >
+      No questions yet
+    </p>
+    <p
+      class="text-neutral-500 text-sm mb-6"
+    >
+      Get started by adding your first question to the quiz
+    </p>
+    <button
+      aria-disabled="false"
+      aria-label="Add first question"
+      class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+      style="cursor: pointer;"
+      type="button"
+    >
+      + Add Question
+    </button>
+  </div>
+</div>
+`;
+
+exports[`QuestionList Snapshots should match snapshot with questions 1`] = `
+<div
+  class="space-y-6"
+>
+  <div
+    class="space-y-6"
+  >
+    <div
+      class="relative"
+    >
+      <div
+        class="flex items-center justify-between mb-2"
+      >
+        <h3
+          class="text-lg font-semibold text-neutral-900"
+        >
+          Question 
+          1
+        </h3>
+        <button
+          aria-label="Remove question 1"
+          class="px-3 py-1 text-sm font-medium text-destructive-600 hover:text-destructive-700 hover:bg-destructive-50 rounded-md transition-colors flex items-center gap-1.5"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 11v6"
+            />
+            <path
+              d="M14 11v6"
+            />
+            <path
+              d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"
+            />
+            <path
+              d="M3 6h18"
+            />
+            <path
+              d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+            />
+          </svg>
+          Remove Question
+        </button>
+      </div>
+      <div
+        class="border border-neutral-200 rounded-lg p-4 "
+      >
+        <div
+          class="flex gap-3 items-start"
+        >
+          <div
+            class="flex-1"
+          >
+            <div
+              class=""
+            >
+              <label
+                class="block text-sm font-medium text-neutral-700 mb-1.5"
+                for="_r_1h_"
+              >
+                Question
+                <span
+                  aria-label="required"
+                  class="text-destructive-600 ml-1"
+                >
+                  *
+                </span>
+              </label>
+              <input
+                aria-invalid="false"
+                class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+                id="_r_1h_"
+                placeholder="Enter your question"
+                required=""
+                type="text"
+                value="Question 1"
+              />
+            </div>
+          </div>
+          <div
+            class="w-48"
+          >
+            <label
+              class="block text-sm font-medium text-neutral-700 mb-1"
+              for="question-type-1"
+            >
+              Type
+            </label>
+            <select
+              aria-label="Question 1 type"
+              class="w-full px-3 py-2 text-sm border border-neutral-300 rounded-md bg-white text-neutral-700 hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+              id="question-type-1"
+            >
+              <option
+                value="single_choice"
+              >
+                Single Choice
+              </option>
+              <option
+                value="multiple_choice"
+              >
+                Multiple Choice
+              </option>
+              <option
+                value="short_text"
+              >
+                Short Text
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="mt-4"
+        >
+          <div
+            class="flex items-center justify-between mb-2"
+          >
+            <div
+              class="block text-sm font-medium text-neutral-700"
+            >
+              Answer Options
+              <span
+                aria-label="required"
+                class="text-destructive-600 ml-1"
+              >
+                *
+              </span>
+            </div>
+            <button
+              aria-disabled="false"
+              aria-label="Add option"
+              class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700 focus-visible:ring-secondary-500 px-3 py-1.5 text-sm rounded-md gap-1.5 "
+              style="cursor: pointer;"
+              type="button"
+            >
+              + Add Option
+            </button>
+          </div>
+          <div
+            class="space-y-3"
+          >
+            <div
+              class="flex items-start gap-2"
+            >
+              <div
+                class="flex items-center pt-8"
+              >
+                <input
+                  aria-label="Mark "Option 1" as correct answer"
+                  checked=""
+                  class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+                  id="correct-1"
+                  name="correct-1"
+                  type="radio"
+                />
+              </div>
+              <div
+                class="flex-1"
+              >
+                <div
+                  class=""
+                >
+                  <label
+                    class="block text-sm font-medium text-neutral-700 mb-1.5"
+                    for="_r_1i_"
+                  >
+                    Option 1
+                    <span
+                      aria-label="required"
+                      class="text-destructive-600 ml-1"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    aria-describedby="_r_1i_-help"
+                    aria-invalid="false"
+                    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+                    id="_r_1i_"
+                    placeholder="Enter option text"
+                    required=""
+                    type="text"
+                    value="Option 1"
+                  />
+                  <p
+                    class="mt-1.5 text-sm text-neutral-600"
+                    id="_r_1i_-help"
+                  >
+                    Correct answer
+                  </p>
+                </div>
+              </div>
+              <div
+                class="pt-8"
+              >
+                <button
+                  aria-disabled="true"
+                  aria-label="Remove option 1"
+                  class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-destructive-600 text-white hover:bg-destructive-700 active:bg-destructive-800 focus-visible:ring-destructive-500 px-3 py-1.5 text-sm rounded-md gap-1.5 "
+                  disabled=""
+                  style="cursor: pointer;"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 11v6"
+                    />
+                    <path
+                      d="M14 11v6"
+                    />
+                    <path
+                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"
+                    />
+                    <path
+                      d="M3 6h18"
+                    />
+                    <path
+                      d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-2"
+            >
+              <div
+                class="flex items-center pt-8"
+              >
+                <input
+                  aria-label="Mark "Option 2" as correct answer"
+                  class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+                  id="correct-2"
+                  name="correct-1"
+                  type="radio"
+                />
+              </div>
+              <div
+                class="flex-1"
+              >
+                <div
+                  class=""
+                >
+                  <label
+                    class="block text-sm font-medium text-neutral-700 mb-1.5"
+                    for="_r_1j_"
+                  >
+                    Option 2
+                    <span
+                      aria-label="required"
+                      class="text-destructive-600 ml-1"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    aria-describedby="_r_1j_-help"
+                    aria-invalid="false"
+                    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+                    id="_r_1j_"
+                    placeholder="Enter option text"
+                    required=""
+                    type="text"
+                    value="Option 2"
+                  />
+                  <p
+                    class="mt-1.5 text-sm text-neutral-600"
+                    id="_r_1j_-help"
+                  >
+                    Select radio to mark as correct
+                  </p>
+                </div>
+              </div>
+              <div
+                class="pt-8"
+              >
+                <button
+                  aria-disabled="true"
+                  aria-label="Remove option 2"
+                  class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-destructive-600 text-white hover:bg-destructive-700 active:bg-destructive-800 focus-visible:ring-destructive-500 px-3 py-1.5 text-sm rounded-md gap-1.5 "
+                  disabled=""
+                  style="cursor: pointer;"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 11v6"
+                    />
+                    <path
+                      d="M14 11v6"
+                    />
+                    <path
+                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"
+                    />
+                    <path
+                      d="M3 6h18"
+                    />
+                    <path
+                      d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-4 text-sm text-primary-600"
+          role="status"
+        >
+          ✓ Question is valid
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative"
+    >
+      <div
+        class="flex items-center justify-between mb-2"
+      >
+        <h3
+          class="text-lg font-semibold text-neutral-900"
+        >
+          Question 
+          2
+        </h3>
+        <button
+          aria-label="Remove question 2"
+          class="px-3 py-1 text-sm font-medium text-destructive-600 hover:text-destructive-700 hover:bg-destructive-50 rounded-md transition-colors flex items-center gap-1.5"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 11v6"
+            />
+            <path
+              d="M14 11v6"
+            />
+            <path
+              d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"
+            />
+            <path
+              d="M3 6h18"
+            />
+            <path
+              d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+            />
+          </svg>
+          Remove Question
+        </button>
+      </div>
+      <div
+        class="border border-neutral-200 rounded-lg p-4 "
+      >
+        <div
+          class="flex gap-3 items-start"
+        >
+          <div
+            class="flex-1"
+          >
+            <div
+              class=""
+            >
+              <label
+                class="block text-sm font-medium text-neutral-700 mb-1.5"
+                for="_r_1k_"
+              >
+                Question
+                <span
+                  aria-label="required"
+                  class="text-destructive-600 ml-1"
+                >
+                  *
+                </span>
+              </label>
+              <input
+                aria-describedby="_r_1k_-help"
+                aria-invalid="false"
+                class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+                id="_r_1k_"
+                placeholder="Enter your question"
+                required=""
+                type="text"
+                value="Question 2"
+              />
+              <p
+                class="mt-1.5 text-sm text-neutral-600"
+                id="_r_1k_-help"
+              >
+                Students will provide a text response to this question
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-48"
+          >
+            <label
+              class="block text-sm font-medium text-neutral-700 mb-1"
+              for="question-type-2"
+            >
+              Type
+            </label>
+            <select
+              aria-label="Question 2 type"
+              class="w-full px-3 py-2 text-sm border border-neutral-300 rounded-md bg-white text-neutral-700 hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+              id="question-type-2"
+            >
+              <option
+                value="single_choice"
+              >
+                Single Choice
+              </option>
+              <option
+                value="multiple_choice"
+              >
+                Multiple Choice
+              </option>
+              <option
+                value="short_text"
+              >
+                Short Text
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="mt-4 border-t border-neutral-200 pt-4"
+        >
+          <p
+            class="text-sm font-medium text-neutral-700 mb-2"
+          >
+            Preview:
+          </p>
+          <p
+            class="text-base text-neutral-900 mb-2"
+          >
+            Question 2
+          </p>
+          <div
+            class=""
+          >
+            <label
+              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              for="_r_1l_"
+            >
+              Student answer area
+            </label>
+            <textarea
+              aria-invalid="false"
+              class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 resize-y px-3 py-1.5 text-sm border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-neutral-100 text-neutral-500 cursor-not-allowed "
+              disabled=""
+              id="_r_1l_"
+              placeholder="Type your answer here..."
+              rows="3"
+            />
+          </div>
+        </div>
+        <div
+          class="mt-4 text-sm text-primary-600"
+          role="status"
+        >
+          ✓ Question is valid
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="border-t border-neutral-200 pt-6"
+  >
+    <button
+      aria-disabled="false"
+      aria-label="Add new question"
+      class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+      style="cursor: pointer;"
+      type="button"
+    >
+      + Add Question
+    </button>
+  </div>
+</div>
+`;

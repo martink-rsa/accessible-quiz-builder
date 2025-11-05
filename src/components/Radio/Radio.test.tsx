@@ -424,4 +424,74 @@ describe('Radio', () => {
       expect(ref.current).toHaveFocus();
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot with default props', () => {
+      const { container } = render(
+        <Radio name="test" label="Easy" value="easy" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with all sizes', () => {
+      const { container } = render(
+        <div>
+          <Radio name="test" label="Small" value="sm" size="sm" />
+          <Radio name="test" label="Medium" value="md" size="md" />
+          <Radio name="test" label="Large" value="lg" size="lg" />
+        </div>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot when checked', () => {
+      const { container } = render(
+        <Radio name="test" label="Checked" value="checked" checked readOnly />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot when disabled', () => {
+      const { container } = render(
+        <Radio name="test" label="Disabled" value="disabled" disabled />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with error', () => {
+      const { container } = render(
+        <Radio name="test" label="Option" value="opt" error="Please select" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with help text', () => {
+      const { container } = render(
+        <Radio
+          name="test"
+          label="Subscribe"
+          value="sub"
+          helpText="Optional subscription"
+        />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot in a radio group', () => {
+      const { container } = render(
+        <div>
+          <Radio name="difficulty" label="Easy" value="easy" />
+          <Radio
+            name="difficulty"
+            label="Medium"
+            value="medium"
+            checked
+            readOnly
+          />
+          <Radio name="difficulty" label="Hard" value="hard" />
+        </div>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+  });
 });

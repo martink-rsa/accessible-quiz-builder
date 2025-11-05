@@ -316,4 +316,56 @@ describe('Checkbox', () => {
       expect(ref.current).toHaveFocus();
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot with default props', () => {
+      const { container } = render(<Checkbox label="I agree to terms" />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with all sizes', () => {
+      const { container } = render(
+        <div>
+          <Checkbox label="Small" size="sm" />
+          <Checkbox label="Medium" size="md" />
+          <Checkbox label="Large" size="lg" />
+        </div>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot when checked', () => {
+      const { container } = render(
+        <Checkbox label="I agree" checked readOnly />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot when disabled', () => {
+      const { container } = render(<Checkbox label="Disabled" disabled />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with error', () => {
+      const { container } = render(
+        <Checkbox label="Accept terms" error="You must accept the terms" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with help text', () => {
+      const { container } = render(
+        <Checkbox
+          label="Subscribe"
+          helpText="You can unsubscribe at any time"
+        />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot when required', () => {
+      const { container } = render(<Checkbox label="Required" required />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

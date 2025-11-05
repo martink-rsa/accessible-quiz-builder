@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ButtonGroup Snapshots should match snapshot with default props 1`] = `
+<div
+  aria-label="Actions"
+  class="inline-flex shadow-sm [&>*]:rounded-none [&>*:first-child]:rounded-l-md [&>*:last-child]:rounded-r-md "
+  role="group"
+>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Edit
+  </button>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Preview
+  </button>
+</div>
+`;
+
+exports[`ButtonGroup Snapshots should match snapshot with different sizes 1`] = `
+<div
+  aria-label="Sized buttons"
+  class="inline-flex shadow-sm [&>*]:rounded-none [&>*:first-child]:rounded-l-md [&>*:last-child]:rounded-r-md "
+  role="group"
+>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-3 py-1.5 text-sm rounded-md gap-1.5 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Small
+  </button>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Medium
+  </button>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-6 py-3 text-lg rounded-lg gap-2.5 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Large
+  </button>
+</div>
+`;
+
+exports[`ButtonGroup Snapshots should match snapshot with different variants 1`] = `
+<div
+  aria-label="Mixed variants"
+  class="inline-flex shadow-sm [&>*]:rounded-none [&>*:first-child]:rounded-l-md [&>*:last-child]:rounded-r-md "
+  role="group"
+>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Primary
+  </button>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700 focus-visible:ring-secondary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Secondary
+  </button>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-transparent text-neutral-700 hover:bg-neutral-100 active:bg-neutral-200 focus-visible:ring-neutral-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Ghost
+  </button>
+</div>
+`;
+
+exports[`ButtonGroup Snapshots should match snapshot with disabled button 1`] = `
+<div
+  aria-label="Actions"
+  class="inline-flex shadow-sm [&>*]:rounded-none [&>*:first-child]:rounded-l-md [&>*:last-child]:rounded-r-md "
+  role="group"
+>
+  <button
+    aria-disabled="true"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    disabled=""
+    style="cursor: pointer;"
+    type="button"
+  >
+    Disabled
+  </button>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Enabled
+  </button>
+</div>
+`;
+
+exports[`ButtonGroup Snapshots should match snapshot with multiple buttons 1`] = `
+<div
+  aria-label="Actions"
+  class="inline-flex shadow-sm [&>*]:rounded-none [&>*:first-child]:rounded-l-md [&>*:last-child]:rounded-r-md "
+  role="group"
+>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    First
+  </button>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Second
+  </button>
+  <button
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Third
+  </button>
+</div>
+`;
+
+exports[`ButtonGroup Snapshots should match snapshot with toggle buttons 1`] = `
+<div
+  aria-label="View mode"
+  class="inline-flex shadow-sm [&>*]:rounded-none [&>*:first-child]:rounded-l-md [&>*:last-child]:rounded-r-md "
+  role="group"
+>
+  <button
+    aria-disabled="false"
+    aria-pressed="true"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Active
+  </button>
+  <button
+    aria-disabled="false"
+    aria-pressed="false"
+    class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+    style="cursor: pointer;"
+    type="button"
+  >
+    Inactive
+  </button>
+</div>
+`;

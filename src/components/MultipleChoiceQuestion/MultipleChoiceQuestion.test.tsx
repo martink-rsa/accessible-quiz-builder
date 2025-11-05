@@ -271,4 +271,30 @@ describe('MultipleChoiceQuestion', () => {
       expect(pythonCheckbox).not.toBeChecked();
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot in edit mode', () => {
+      const { container } = render(
+        <MultipleChoiceQuestion question={mockQuestion} />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot in preview mode', () => {
+      const { container } = render(
+        <MultipleChoiceQuestion question={mockQuestion} preview />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with custom className', () => {
+      const { container } = render(
+        <MultipleChoiceQuestion
+          question={mockQuestion}
+          className="custom-class"
+        />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

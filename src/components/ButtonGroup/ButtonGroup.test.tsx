@@ -252,4 +252,69 @@ describe('ButtonGroup', () => {
       expect(screen.getByTestId('preview-icon')).toBeInTheDocument();
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot with default props', () => {
+      const { container } = render(
+        <ButtonGroup aria-label="Actions">
+          <Button>Edit</Button>
+          <Button>Preview</Button>
+        </ButtonGroup>,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with multiple buttons', () => {
+      const { container } = render(
+        <ButtonGroup aria-label="Actions">
+          <Button>First</Button>
+          <Button>Second</Button>
+          <Button>Third</Button>
+        </ButtonGroup>,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with different variants', () => {
+      const { container } = render(
+        <ButtonGroup aria-label="Mixed variants">
+          <Button variant="primary">Primary</Button>
+          <Button variant="secondary">Secondary</Button>
+          <Button variant="ghost">Ghost</Button>
+        </ButtonGroup>,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with different sizes', () => {
+      const { container } = render(
+        <ButtonGroup aria-label="Sized buttons">
+          <Button size="sm">Small</Button>
+          <Button size="md">Medium</Button>
+          <Button size="lg">Large</Button>
+        </ButtonGroup>,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with toggle buttons', () => {
+      const { container } = render(
+        <ButtonGroup aria-label="View mode">
+          <Button aria-pressed={true}>Active</Button>
+          <Button aria-pressed={false}>Inactive</Button>
+        </ButtonGroup>,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with disabled button', () => {
+      const { container } = render(
+        <ButtonGroup aria-label="Actions">
+          <Button disabled>Disabled</Button>
+          <Button>Enabled</Button>
+        </ButtonGroup>,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });
