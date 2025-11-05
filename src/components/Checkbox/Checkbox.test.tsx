@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { renderAndCheckA11y, checkA11y } from '../../test-utils';
@@ -307,7 +308,7 @@ describe('Checkbox', () => {
     });
 
     it('should allow focus via ref', () => {
-      const ref = { current: null };
+      const ref = React.createRef<HTMLInputElement>();
       render(<Checkbox label="Focus test" ref={ref} />);
 
       expect(ref.current).toBeInstanceOf(HTMLInputElement);

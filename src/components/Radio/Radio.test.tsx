@@ -126,12 +126,12 @@ describe('Radio', () => {
       expect(screen.getByText('Not available')).toBeInTheDocument();
     });
 
-    it('should mark radio as invalid when error is present', () => {
+    it('should apply error styling when error is present', () => {
       render(
         <Radio name="test" label="Hard" value="hard" error="Not available" />,
       );
       const radio = screen.getByLabelText('Hard');
-      expect(radio).toHaveAttribute('aria-invalid', 'true');
+      expect(radio).toHaveClass('border-destructive-500');
     });
 
     it('should associate error with radio using aria-describedby', () => {
