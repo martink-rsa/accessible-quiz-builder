@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useQuizReducer } from './hooks/useQuizReducer';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { QuestionList } from './components/QuestionList';
@@ -6,6 +6,7 @@ import { QuizPreview } from './components/QuizPreview';
 import { Input } from './components/Input';
 import { Textarea } from './components/Input/Textarea';
 import { Button } from './components/Button';
+import { Edit, Eye, Trash2, Undo2, Redo2 } from 'lucide-react';
 import type { Quiz } from './types/quiz';
 
 const STORAGE_KEY = 'accessible-quiz-builder-quiz';
@@ -70,6 +71,7 @@ export default function App() {
                 onClick={() => setMode('edit')}
                 aria-pressed={mode === 'edit'}
               >
+                <Edit className="w-4 h-4" />
                 Edit
               </Button>
               <Button
@@ -77,6 +79,7 @@ export default function App() {
                 onClick={() => setMode('preview')}
                 aria-pressed={mode === 'preview'}
               >
+                <Eye className="w-4 h-4" />
                 Preview
               </Button>
             </div>
@@ -92,7 +95,8 @@ export default function App() {
                 disabled={!canUndo}
                 aria-label="Undo last change"
               >
-                ↶ Undo
+                <Undo2 className="w-4 h-4" />
+                Undo
               </Button>
               <Button
                 variant="ghost"
@@ -101,7 +105,8 @@ export default function App() {
                 disabled={!canRedo}
                 aria-label="Redo"
               >
-                ↷ Redo
+                <Redo2 className="w-4 h-4" />
+                Redo
               </Button>
               <div className="flex-1" />
               {!showClearConfirm ? (
@@ -109,8 +114,13 @@ export default function App() {
                   variant="destructive"
                   size="sm"
                   onClick={() => setShowClearConfirm(true)}
-                  disabled={quiz.questions.length === 0}
+                  disabled={
+                    quiz.questions.length === 0 &&
+                    !quiz.title &&
+                    !quiz.description
+                  }
                 >
+                  <Trash2 className="w-4 h-4" />
                   Clear Quiz
                 </Button>
               ) : (

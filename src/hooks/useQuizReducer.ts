@@ -275,6 +275,8 @@ function quizReducer(state: QuizState, action: QuizAction): QuizState {
     case QuizActionType.CLEAR_QUIZ: {
       const newQuiz: Quiz = {
         ...present,
+        title: '',
+        description: '',
         questions: [],
       };
       return createHistoryState(newQuiz, past, present);
