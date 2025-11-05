@@ -3,13 +3,16 @@ import userEvent from '@testing-library/user-event';
 import { renderAndCheckA11y } from '../../test-utils';
 import { PublishModal } from './PublishModal';
 
-// Mock clipboard API
-const mockWriteText = jest.fn(() => Promise.resolve());
-Object.assign(navigator, {
-  clipboard: {
-    writeText: mockWriteText,
-  },
-});
+// Mock clipboard API - ensure it exists
+if (!navigator.clipboard) {
+  Object.defineProperty(navigator, 'clipboard', {
+    value: {
+      writeText: jest.fn(),
+    },
+    configurable: true,
+    writable: true,
+  });
+}
 
 // Mock window.open
 const mockWindowOpen = jest.fn();
@@ -17,6 +20,9 @@ window.open = mockWindowOpen;
 
 // Mock Math.random to return consistent values for snapshot tests
 const mockMathRandom = jest.spyOn(Math, 'random');
+
+// Clipboard mock spy
+let mockWriteText: jest.SpyInstance;
 
 describe('PublishModal', () => {
   const mockOnClose = jest.fn();
@@ -28,11 +34,15 @@ describe('PublishModal', () => {
 
   beforeEach(() => {
     jest.clearAllMocks();
+    // Spy on clipboard.writeText and mock it to resolve
+    mockWriteText = jest
+      .spyOn(navigator.clipboard, 'writeText')
+      .mockResolvedValue();
     // Reset Math.random to return a consistent sequence
-    // This generates the hash "ABC12345" consistently
+    // This generates the hash "ABCflrx3" consistently
     let callCount = 0;
     mockMathRandom.mockImplementation(() => {
-      const values = [0.0, 0.03, 0.04, 0.5, 0.6, 0.7, 0.8, 0.9]; // Maps to "ABC12345"
+      const values = [0.0, 0.03, 0.04, 0.5, 0.6, 0.7, 0.8, 0.9];
       return values[callCount++ % values.length];
     });
   });
@@ -192,7 +202,9 @@ describe('PublishModal', () => {
 
       await user.click(copyButton);
 
-      expect(mockWriteText).toHaveBeenCalledWith(quizUrl);
+      await waitFor(() => {
+        expect(mockWriteText).toHaveBeenCalledWith(quizUrl);
+      });
     });
 
     it('should show success state after copying', async () => {
@@ -248,12 +260,16 @@ describe('PublishModal', () => {
       });
       await user.click(copyButton);
 
-      await waitFor(() => {
-        expect(consoleErrorSpy).toHaveBeenCalledWith(
-          'Failed to copy URL:',
-          clipboardError,
-        );
-      });
+      // Wait for the async clipboard operation to complete and error to be logged
+      await waitFor(
+        () => {
+          expect(consoleErrorSpy).toHaveBeenCalledWith(
+            'Failed to copy URL:',
+            clipboardError,
+          );
+        },
+        { timeout: 3000 },
+      );
 
       consoleErrorSpy.mockRestore();
       mockWriteText.mockImplementation(() => Promise.resolve());
