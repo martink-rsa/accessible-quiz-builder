@@ -9,7 +9,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Accessible input component with label, error states, and help text. Follows WCAG 2.1 Level AA guidelines with proper label association, error handling, and keyboard navigation support.',
+          'Accessible input component with label, error states, and help text. Follows WCAG 2.2 Level AA guidelines with proper label association, error handling, and keyboard navigation support.',
       },
     },
   },

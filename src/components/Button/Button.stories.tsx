@@ -9,7 +9,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Accessible button component with multiple variants, sizes, and states. Follows WCAG 2.1 Level AA guidelines with proper contrast ratios and keyboard navigation support.',
+          'Accessible button component with multiple variants, sizes, and states. Follows WCAG 2.2 Level AA guidelines with proper contrast ratios and keyboard navigation support.',
       },
     },
   },

@@ -198,7 +198,7 @@ export default function App() {
         {/* Footer */}
         <footer className="mt-8 text-center text-sm text-neutral-600">
           <p>
-            Built with accessibility in mind. Follows WCAG 2.1 Level AA
+            Built with accessibility in mind. Follows WCAG 2.2 Level AA
             guidelines.
           </p>
         </footer>

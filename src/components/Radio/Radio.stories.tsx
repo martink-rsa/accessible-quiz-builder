@@ -9,7 +9,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Accessible radio button component with label, error states, and help text. Follows WCAG 2.1 Level AA guidelines with proper label association, error handling, and keyboard navigation support. Radio buttons should be used in groups with the same name attribute to allow only one selection.',
+          'Accessible radio button component with label, error states, and help text. Follows WCAG 2.2 Level AA guidelines with proper label association, error handling, and keyboard navigation support. Radio buttons should be used in groups with the same name attribute to allow only one selection.',
       },
     },
   },
