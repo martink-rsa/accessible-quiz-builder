@@ -189,4 +189,16 @@ describe('QuizPreview', () => {
       ).not.toBeInTheDocument();
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot with quiz', () => {
+      const { container } = render(<QuizPreview quiz={mockQuiz} />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with empty quiz', () => {
+      const { container } = render(<QuizPreview quiz={emptyQuiz} />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

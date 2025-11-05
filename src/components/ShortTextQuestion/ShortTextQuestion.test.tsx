@@ -163,4 +163,27 @@ describe('ShortTextQuestion', () => {
       expect(container.firstChild).toHaveClass('custom-class');
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot in edit mode', () => {
+      const { container } = render(
+        <ShortTextQuestion question={mockQuestion} />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot in preview mode', () => {
+      const { container } = render(
+        <ShortTextQuestion question={mockQuestion} preview />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with custom className', () => {
+      const { container } = render(
+        <ShortTextQuestion question={mockQuestion} className="custom-class" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

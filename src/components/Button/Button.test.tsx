@@ -258,4 +258,60 @@ describe('Button', () => {
       expect(ref.mock.calls[0][0]).toBeInstanceOf(HTMLButtonElement);
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot with default props', () => {
+      const { container } = render(<Button>Default Button</Button>);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with all variants', () => {
+      const { container } = render(
+        <div>
+          <Button variant="primary">Primary</Button>
+          <Button variant="secondary">Secondary</Button>
+          <Button variant="ghost">Ghost</Button>
+          <Button variant="destructive">Destructive</Button>
+        </div>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with all sizes', () => {
+      const { container } = render(
+        <div>
+          <Button size="sm">Small</Button>
+          <Button size="md">Medium</Button>
+          <Button size="lg">Large</Button>
+        </div>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot when disabled', () => {
+      const { container } = render(<Button disabled>Disabled</Button>);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot when loading', () => {
+      const { container } = render(<Button loading>Loading</Button>);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot for icon-only button', () => {
+      const { container } = render(
+        <Button iconOnly aria-label="Close">
+          <span>×</span>
+        </Button>,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with custom className', () => {
+      const { container } = render(
+        <Button className="custom-class">Custom</Button>,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

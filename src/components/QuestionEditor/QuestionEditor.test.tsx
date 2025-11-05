@@ -271,4 +271,31 @@ describe('QuestionEditor', () => {
       expect(screen.getByText('Invalid question')).toBeInTheDocument();
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot for single choice question', () => {
+      const { container } = render(
+        <QuestionEditor
+          question={singleChoiceQuestion}
+          questionNumber={1}
+          onTitleChange={jest.fn()}
+          onRemove={jest.fn()}
+        />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with error', () => {
+      const { container } = render(
+        <QuestionEditor
+          question={singleChoiceQuestion}
+          questionNumber={1}
+          onTitleChange={jest.fn()}
+          onRemove={jest.fn()}
+          error="Invalid question"
+        />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

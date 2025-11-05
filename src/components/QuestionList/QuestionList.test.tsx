@@ -224,4 +224,20 @@ describe('QuestionList', () => {
       expect(mockHandlers.onRemoveOption).toHaveBeenCalledWith('1', '1');
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot with questions', () => {
+      const { container } = render(
+        <QuestionList questions={mockQuestions} {...mockHandlers} />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with empty list', () => {
+      const { container } = render(
+        <QuestionList questions={[]} {...mockHandlers} />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

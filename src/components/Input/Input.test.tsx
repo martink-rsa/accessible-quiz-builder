@@ -308,4 +308,61 @@ describe('Input', () => {
       expect(ref.mock.calls[0][0]).toBeInstanceOf(HTMLInputElement);
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot with default props', () => {
+      const { container } = render(<Input label="Email" />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with all types', () => {
+      const { container } = render(
+        <div>
+          <Input label="Text" type="text" />
+          <Input label="Email" type="email" />
+          <Input label="Password" type="password" />
+          <Input label="Number" type="number" />
+        </div>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot when disabled', () => {
+      const { container } = render(<Input label="Disabled" disabled />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with error', () => {
+      const { container } = render(
+        <Input label="Email" error="Invalid email address" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with help text', () => {
+      const { container } = render(
+        <Input label="Password" helpText="Must be at least 8 characters" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot when required', () => {
+      const { container } = render(<Input label="Required" required />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with value', () => {
+      const { container } = render(
+        <Input label="Name" value="John Doe" readOnly />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with placeholder', () => {
+      const { container } = render(
+        <Input label="Email" placeholder="email@example.com" />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

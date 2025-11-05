@@ -75,4 +75,13 @@ describe('QuestionTypeSelector', () => {
     expect(screen.getByText('Short Text:')).toBeInTheDocument();
     expect(screen.getByText(/text response/i)).toBeInTheDocument();
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot', () => {
+      const { container } = render(
+        <QuestionTypeSelector onSelect={jest.fn()} />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

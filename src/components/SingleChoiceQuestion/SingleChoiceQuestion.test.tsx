@@ -248,4 +248,30 @@ describe('SingleChoiceQuestion', () => {
       expect(londonRadio).toBeChecked();
     });
   });
+
+  describe('Snapshots', () => {
+    it('should match snapshot in edit mode', () => {
+      const { container } = render(
+        <SingleChoiceQuestion question={mockQuestion} />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot in preview mode', () => {
+      const { container } = render(
+        <SingleChoiceQuestion question={mockQuestion} preview />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match snapshot with custom className', () => {
+      const { container } = render(
+        <SingleChoiceQuestion
+          question={mockQuestion}
+          className="custom-class"
+        />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
+  });
 });

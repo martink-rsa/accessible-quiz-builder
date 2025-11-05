@@ -55,3 +55,10 @@ test('App remains accessible after toggling between modes', async () => {
   // Verify still accessible after switching back
   await checkA11y(container);
 });
+
+describe('Snapshots', () => {
+  it('should match snapshot in edit mode', () => {
+    const { container } = render(<App />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});
