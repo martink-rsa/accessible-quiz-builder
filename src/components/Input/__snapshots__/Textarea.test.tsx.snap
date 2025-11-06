@@ -5,7 +5,7 @@ exports[`Textarea Snapshots should match snapshot when disabled 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_17_"
   >
     Disabled
@@ -25,7 +25,7 @@ exports[`Textarea Snapshots should match snapshot when required 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1a_"
   >
     Required
@@ -51,7 +51,7 @@ exports[`Textarea Snapshots should match snapshot with custom rows 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1d_"
   >
     Large
@@ -70,7 +70,7 @@ exports[`Textarea Snapshots should match snapshot with default props 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_16_"
   >
     Comments
@@ -89,7 +89,7 @@ exports[`Textarea Snapshots should match snapshot with error 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_18_"
   >
     Description
@@ -102,7 +102,7 @@ exports[`Textarea Snapshots should match snapshot with error 1`] = `
     rows="4"
   />
   <p
-    class="mt-1.5 text-sm text-destructive-600"
+    class="text-destructive-600 mt-1.5 text-sm"
     id="_r_18_-error"
     role="alert"
   >
@@ -116,7 +116,7 @@ exports[`Textarea Snapshots should match snapshot with help text 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_19_"
   >
     Bio
@@ -142,7 +142,7 @@ exports[`Textarea Snapshots should match snapshot with placeholder 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1c_"
   >
     Comments
@@ -162,7 +162,7 @@ exports[`Textarea Snapshots should match snapshot with value 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1b_"
   >
     Notes

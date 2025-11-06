@@ -5,7 +5,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
   class="relative"
 >
   <div
-    class="flex items-center justify-between mb-2"
+    class="mb-2 flex items-center justify-between"
   >
     <h3
       class="text-lg font-semibold text-neutral-900"
@@ -15,11 +15,11 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
     </h3>
     <button
       aria-label="Remove question 1"
-      class="px-3 py-1 text-sm font-medium text-destructive-600 hover:text-destructive-700 hover:bg-destructive-50 rounded-md transition-colors flex items-center gap-1.5"
+      class="text-destructive-600 hover:text-destructive-700 hover:bg-destructive-50 flex items-center gap-1.5 rounded-md px-3 py-1 text-sm font-medium transition-colors"
     >
       <svg
         aria-hidden="true"
-        class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+        class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
         fill="none"
         height="24"
         stroke="currentColor"
@@ -50,10 +50,10 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
     </button>
   </div>
   <div
-    class="border border-neutral-200 rounded-lg p-4 "
+    class="rounded-lg border border-neutral-200 p-4 "
   >
     <div
-      class="flex gap-3 items-start"
+      class="flex items-start gap-3"
     >
       <div
         class="flex-1"
@@ -62,7 +62,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
           class=""
         >
           <label
-            class="block text-sm font-medium text-neutral-700 mb-1.5"
+            class="mb-1.5 block text-sm font-medium text-neutral-700"
             for="_r_19_"
           >
             Question
@@ -89,7 +89,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
       class="mt-4"
     >
       <div
-        class="flex items-center justify-between mb-2"
+        class="mb-2 flex items-center justify-between"
       >
         <div
           class="block text-sm font-medium text-neutral-700"
@@ -123,7 +123,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
           >
             <input
               aria-label="Mark "3" as correct answer"
-              class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+              class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded-full border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
               id="correct-1"
               name="correct-1"
               type="radio"
@@ -136,7 +136,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
               class=""
             >
               <label
-                class="block text-sm font-medium text-neutral-700 mb-1.5"
+                class="mb-1.5 block text-sm font-medium text-neutral-700"
                 for="_r_1a_"
               >
                 Option 1
@@ -178,7 +178,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+                class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
                 fill="none"
                 height="24"
                 stroke="currentColor"
@@ -217,7 +217,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
             <input
               aria-label="Mark "4" as correct answer"
               checked=""
-              class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+              class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded-full border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
               id="correct-2"
               name="correct-1"
               type="radio"
@@ -230,7 +230,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
               class=""
             >
               <label
-                class="block text-sm font-medium text-neutral-700 mb-1.5"
+                class="mb-1.5 block text-sm font-medium text-neutral-700"
                 for="_r_1b_"
               >
                 Option 2
@@ -272,7 +272,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+                class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
                 fill="none"
                 height="24"
                 stroke="currentColor"
@@ -305,7 +305,7 @@ exports[`QuestionEditor Snapshots should match snapshot for single choice questi
       </div>
     </div>
     <div
-      class="mt-4 text-sm text-primary-600"
+      class="text-primary-600 mt-4 text-sm"
       role="status"
     >
       ✓ Question is valid
@@ -319,7 +319,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
   class="relative"
 >
   <div
-    class="flex items-center justify-between mb-2"
+    class="mb-2 flex items-center justify-between"
   >
     <h3
       class="text-lg font-semibold text-neutral-900"
@@ -329,11 +329,11 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
     </h3>
     <button
       aria-label="Remove question 1"
-      class="px-3 py-1 text-sm font-medium text-destructive-600 hover:text-destructive-700 hover:bg-destructive-50 rounded-md transition-colors flex items-center gap-1.5"
+      class="text-destructive-600 hover:text-destructive-700 hover:bg-destructive-50 flex items-center gap-1.5 rounded-md px-3 py-1 text-sm font-medium transition-colors"
     >
       <svg
         aria-hidden="true"
-        class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+        class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
         fill="none"
         height="24"
         stroke="currentColor"
@@ -364,10 +364,10 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
     </button>
   </div>
   <div
-    class="border border-neutral-200 rounded-lg p-4 "
+    class="rounded-lg border border-neutral-200 p-4 "
   >
     <div
-      class="flex gap-3 items-start"
+      class="flex items-start gap-3"
     >
       <div
         class="flex-1"
@@ -376,7 +376,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
           class=""
         >
           <label
-            class="block text-sm font-medium text-neutral-700 mb-1.5"
+            class="mb-1.5 block text-sm font-medium text-neutral-700"
             for="_r_1c_"
           >
             Question
@@ -398,7 +398,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
             value="What is 2 + 2?"
           />
           <p
-            class="mt-1.5 text-sm text-destructive-600"
+            class="text-destructive-600 mt-1.5 text-sm"
             id="_r_1c_-error"
             role="alert"
           >
@@ -411,7 +411,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
       class="mt-4"
     >
       <div
-        class="flex items-center justify-between mb-2"
+        class="mb-2 flex items-center justify-between"
       >
         <div
           class="block text-sm font-medium text-neutral-700"
@@ -445,7 +445,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
           >
             <input
               aria-label="Mark "3" as correct answer"
-              class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+              class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded-full border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
               id="correct-1"
               name="correct-1"
               type="radio"
@@ -458,7 +458,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
               class=""
             >
               <label
-                class="block text-sm font-medium text-neutral-700 mb-1.5"
+                class="mb-1.5 block text-sm font-medium text-neutral-700"
                 for="_r_1d_"
               >
                 Option 1
@@ -500,7 +500,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+                class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
                 fill="none"
                 height="24"
                 stroke="currentColor"
@@ -539,7 +539,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
             <input
               aria-label="Mark "4" as correct answer"
               checked=""
-              class="w-5 h-5 border-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+              class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded-full border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
               id="correct-2"
               name="correct-1"
               type="radio"
@@ -552,7 +552,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
               class=""
             >
               <label
-                class="block text-sm font-medium text-neutral-700 mb-1.5"
+                class="mb-1.5 block text-sm font-medium text-neutral-700"
                 for="_r_1e_"
               >
                 Option 2
@@ -594,7 +594,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+                class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
                 fill="none"
                 height="24"
                 stroke="currentColor"
@@ -627,7 +627,7 @@ exports[`QuestionEditor Snapshots should match snapshot with error 1`] = `
       </div>
     </div>
     <div
-      class="mt-4 text-sm text-primary-600"
+      class="text-primary-600 mt-4 text-sm"
       role="status"
     >
       ✓ Question is valid
