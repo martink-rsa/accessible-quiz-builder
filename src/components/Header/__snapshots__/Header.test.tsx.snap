@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Header Snapshots should match snapshot with custom className 1`] = `
+<header
+  class="bg-white border-b border-neutral-200 px-6 py-4 shadow-lg"
+>
+  <div
+    class="max-w-5xl mx-auto"
+  >
+    <img
+      alt="QUIZU - Accessible Quiz Builder"
+      class="h-12"
+      src="test-file-stub"
+    />
+  </div>
+</header>
+`;
+
+exports[`Header Snapshots should match snapshot with default props 1`] = `
+<header
+  class="bg-white border-b border-neutral-200 px-6 py-4 "
+>
+  <div
+    class="max-w-5xl mx-auto"
+  >
+    <img
+      alt="QUIZU - Accessible Quiz Builder"
+      class="h-12"
+      src="test-file-stub"
+    />
+  </div>
+</header>
+`;
