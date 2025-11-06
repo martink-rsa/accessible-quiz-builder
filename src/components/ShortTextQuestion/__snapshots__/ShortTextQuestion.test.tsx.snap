@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ShortTextQuestion Snapshots should match snapshot in edit mode 1`] = `
+<div
+  class="rounded-lg border border-neutral-200 p-4 "
+>
+  <div
+    class="flex items-start gap-3"
+  >
+    <div
+      class="flex-1"
+    >
+      <div
+        class=""
+      >
+        <label
+          class="mb-1.5 block text-sm font-medium text-neutral-700"
+          for="_r_q_"
+        >
+          Question
+          <span
+            aria-label="required"
+            class="text-destructive-600 ml-1"
+          >
+            *
+          </span>
+        </label>
+        <input
+          aria-describedby="_r_q_-help"
+          aria-invalid="false"
+          class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+          id="_r_q_"
+          placeholder="Enter your question"
+          required=""
+          type="text"
+          value="Explain the concept of polymorphism in programming."
+        />
+        <p
+          class="mt-1.5 text-sm text-neutral-600"
+          id="_r_q_-help"
+        >
+          Students will provide a text response to this question
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mt-4 border-t border-neutral-200 pt-4"
+  >
+    <p
+      class="mb-2 text-sm font-medium text-neutral-700"
+    >
+      Preview:
+    </p>
+    <p
+      class="mb-2 text-base text-neutral-900"
+    >
+      Explain the concept of polymorphism in programming.
+    </p>
+    <div
+      class=""
+    >
+      <label
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
+        for="_r_r_"
+      >
+        Student answer area
+      </label>
+      <textarea
+        aria-invalid="false"
+        class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 resize-y px-3 py-1.5 text-sm border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-neutral-100 text-neutral-500 cursor-not-allowed "
+        disabled=""
+        id="_r_r_"
+        placeholder="Type your answer here..."
+        rows="3"
+      />
+    </div>
+  </div>
+  <div
+    class="text-primary-600 mt-4 text-sm"
+    role="status"
+  >
+    ✓ Question is valid
+  </div>
+</div>
+`;
+
+exports[`ShortTextQuestion Snapshots should match snapshot in preview mode 1`] = `
+<div
+  class="rounded-lg border border-neutral-200 p-4 "
+>
+  <label
+    class="mb-4 block text-lg font-semibold"
+  >
+    Explain the concept of polymorphism in programming.
+  </label>
+  <div
+    class=""
+  >
+    <label
+      class="mb-1.5 block text-sm font-medium text-neutral-700"
+      for="_r_s_"
+    >
+      Your Answer
+    </label>
+    <textarea
+      aria-invalid="false"
+      class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 resize-y px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+      id="_r_s_"
+      placeholder="Type your answer here..."
+      rows="4"
+    />
+  </div>
+</div>
+`;
+
+exports[`ShortTextQuestion Snapshots should match snapshot with custom className 1`] = `
+<div
+  class="rounded-lg border border-neutral-200 p-4 custom-class"
+>
+  <div
+    class="flex items-start gap-3"
+  >
+    <div
+      class="flex-1"
+    >
+      <div
+        class=""
+      >
+        <label
+          class="mb-1.5 block text-sm font-medium text-neutral-700"
+          for="_r_t_"
+        >
+          Question
+          <span
+            aria-label="required"
+            class="text-destructive-600 ml-1"
+          >
+            *
+          </span>
+        </label>
+        <input
+          aria-describedby="_r_t_-help"
+          aria-invalid="false"
+          class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+          id="_r_t_"
+          placeholder="Enter your question"
+          required=""
+          type="text"
+          value="Explain the concept of polymorphism in programming."
+        />
+        <p
+          class="mt-1.5 text-sm text-neutral-600"
+          id="_r_t_-help"
+        >
+          Students will provide a text response to this question
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mt-4 border-t border-neutral-200 pt-4"
+  >
+    <p
+      class="mb-2 text-sm font-medium text-neutral-700"
+    >
+      Preview:
+    </p>
+    <p
+      class="mb-2 text-base text-neutral-900"
+    >
+      Explain the concept of polymorphism in programming.
+    </p>
+    <div
+      class=""
+    >
+      <label
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
+        for="_r_u_"
+      >
+        Student answer area
+      </label>
+      <textarea
+        aria-invalid="false"
+        class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 resize-y px-3 py-1.5 text-sm border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-neutral-100 text-neutral-500 cursor-not-allowed "
+        disabled=""
+        id="_r_u_"
+        placeholder="Type your answer here..."
+        rows="3"
+      />
+    </div>
+  </div>
+  <div
+    class="text-primary-600 mt-4 text-sm"
+    role="status"
+  >
+    ✓ Question is valid
+  </div>
+</div>
+`;

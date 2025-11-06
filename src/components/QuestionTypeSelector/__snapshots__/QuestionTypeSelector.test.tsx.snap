@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`QuestionTypeSelector Snapshots should match snapshot 1`] = `
+<div
+  class="flex flex-col gap-3 "
+>
+  <h3
+    class="text-sm font-medium text-neutral-700"
+  >
+    Select Question Type:
+  </h3>
+  <div
+    class="flex flex-wrap gap-2"
+  >
+    <button
+      aria-disabled="false"
+      aria-label="Add single choice question"
+      class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+      style="cursor: pointer;"
+      type="button"
+    >
+      Single Choice
+    </button>
+    <button
+      aria-disabled="false"
+      aria-label="Add multiple choice question"
+      class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+      style="cursor: pointer;"
+      type="button"
+    >
+      Multiple Choice
+    </button>
+    <button
+      aria-disabled="false"
+      aria-label="Add short text question"
+      class="inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800 focus-visible:ring-primary-500 px-4 py-2 text-base rounded-md gap-2 "
+      style="cursor: pointer;"
+      type="button"
+    >
+      Short Text
+    </button>
+  </div>
+  <p
+    class="text-sm text-neutral-600"
+  >
+    <strong>
+      Single Choice:
+    </strong>
+     Students select one answer (radio buttons)
+    <br />
+    <strong>
+      Multiple Choice:
+    </strong>
+     Students select multiple answers (checkboxes)
+    <br />
+    <strong>
+      Short Text:
+    </strong>
+     Students type a text response
+  </p>
+</div>
+`;

@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Input Snapshots should match snapshot when disabled 1`] = `
+<div
+  class=""
+>
+  <label
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
+    for="_r_1h_"
+  >
+    Disabled
+  </label>
+  <input
+    aria-invalid="false"
+    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-neutral-100 text-neutral-500 cursor-not-allowed "
+    disabled=""
+    id="_r_1h_"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Input Snapshots should match snapshot when required 1`] = `
+<div
+  class=""
+>
+  <label
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
+    for="_r_1k_"
+  >
+    Required
+    <span
+      aria-label="required"
+      class="text-destructive-600 ml-1"
+    >
+      *
+    </span>
+  </label>
+  <input
+    aria-invalid="false"
+    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+    id="_r_1k_"
+    required=""
+    type="text"
+  />
+</div>
+`;
+
+exports[`Input Snapshots should match snapshot with all types 1`] = `
+<div>
+  <div>
+    <div
+      class=""
+    >
+      <label
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
+        for="_r_1d_"
+      >
+        Text
+      </label>
+      <input
+        aria-invalid="false"
+        class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+        id="_r_1d_"
+        type="text"
+      />
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
+        for="_r_1e_"
+      >
+        Email
+      </label>
+      <input
+        aria-invalid="false"
+        class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+        id="_r_1e_"
+        type="email"
+      />
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
+        for="_r_1f_"
+      >
+        Password
+      </label>
+      <input
+        aria-invalid="false"
+        class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+        id="_r_1f_"
+        type="password"
+      />
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
+        for="_r_1g_"
+      >
+        Number
+      </label>
+      <input
+        aria-invalid="false"
+        class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+        id="_r_1g_"
+        type="number"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snapshots should match snapshot with default props 1`] = `
+<div
+  class=""
+>
+  <label
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
+    for="_r_1c_"
+  >
+    Email
+  </label>
+  <input
+    aria-invalid="false"
+    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+    id="_r_1c_"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Input Snapshots should match snapshot with error 1`] = `
+<div
+  class=""
+>
+  <label
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
+    for="_r_1i_"
+  >
+    Email
+  </label>
+  <input
+    aria-describedby="_r_1i_-error"
+    aria-invalid="true"
+    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-destructive-500 focus:ring-destructive-500 focus:border-destructive-500 bg-white text-neutral-900 "
+    id="_r_1i_"
+    type="text"
+  />
+  <p
+    class="text-destructive-600 mt-1.5 text-sm"
+    id="_r_1i_-error"
+    role="alert"
+  >
+    Invalid email address
+  </p>
+</div>
+`;
+
+exports[`Input Snapshots should match snapshot with help text 1`] = `
+<div
+  class=""
+>
+  <label
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
+    for="_r_1j_"
+  >
+    Password
+  </label>
+  <input
+    aria-describedby="_r_1j_-help"
+    aria-invalid="false"
+    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+    id="_r_1j_"
+    type="text"
+  />
+  <p
+    class="mt-1.5 text-sm text-neutral-600"
+    id="_r_1j_-help"
+  >
+    Must be at least 8 characters
+  </p>
+</div>
+`;
+
+exports[`Input Snapshots should match snapshot with placeholder 1`] = `
+<div
+  class=""
+>
+  <label
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
+    for="_r_1m_"
+  >
+    Email
+  </label>
+  <input
+    aria-invalid="false"
+    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+    id="_r_1m_"
+    placeholder="email@example.com"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Input Snapshots should match snapshot with value 1`] = `
+<div
+  class=""
+>
+  <label
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
+    for="_r_1l_"
+  >
+    Name
+  </label>
+  <input
+    aria-invalid="false"
+    class="w-full border rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 px-4 py-2 text-base border-neutral-300 focus:ring-primary-500 focus:border-primary-500 bg-white text-neutral-900 "
+    id="_r_1l_"
+    readonly=""
+    type="text"
+    value="John Doe"
+  />
+</div>
+`;
