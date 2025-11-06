@@ -1,10 +1,10 @@
 import {
   MultipleChoiceQuestion as MultipleChoiceQuestionType,
   QuestionType,
-} from '../../types/quiz';
-import { Input } from '../Input';
-import { Checkbox } from '../Checkbox';
-import { Button } from '../Button';
+} from '@/types/quiz';
+import { Input } from '@components/Input';
+import { Checkbox } from '@components/Checkbox';
+import { Button } from '@components/Button';
 import { Trash2 } from 'lucide-react';
 
 export interface MultipleChoiceQuestionProps {

@@ -1,5 +1,5 @@
 import { useReducer, useCallback } from 'react';
-import { Quiz, Question, QuestionType, Option } from '../types/quiz';
+import { Quiz, Question, QuestionType, Option } from '@/types/quiz';
 
 /**
  * Action types for the quiz reducer

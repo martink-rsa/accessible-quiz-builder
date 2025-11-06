@@ -1,8 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { axe } from 'jest-axe';
 import React from 'react';
-import App from './App';
-import { renderAndCheckA11y, checkA11y } from './test-utils';
+import App from '@/App';
+import { renderAndCheckA11y, checkA11y } from '@/test-utils';
 
 test('toggles edit/preview modes', () => {
   render(<App />);

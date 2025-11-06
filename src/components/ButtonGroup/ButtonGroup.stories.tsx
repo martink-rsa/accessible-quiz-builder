@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { useState } from 'react';
 import { ButtonGroup } from './ButtonGroup';
-import { Button } from '../Button';
+import { Button } from '@components/Button';
 import { Edit, Eye, AlignLeft, AlignCenter, AlignRight } from 'lucide-react';
 
 const meta = {

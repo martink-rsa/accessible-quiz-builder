@@ -1,7 +1,7 @@
-import { Question, QuestionType } from '../../types/quiz';
-import { SingleChoiceQuestion } from '../SingleChoiceQuestion';
-import { MultipleChoiceQuestion } from '../MultipleChoiceQuestion';
-import { ShortTextQuestion } from '../ShortTextQuestion';
+import { Question, QuestionType } from '@/types/quiz';
+import { SingleChoiceQuestion } from '@components/SingleChoiceQuestion';
+import { MultipleChoiceQuestion } from '@components/MultipleChoiceQuestion';
+import { ShortTextQuestion } from '@components/ShortTextQuestion';
 import { Trash2 } from 'lucide-react';
 
 export interface QuestionEditorProps {

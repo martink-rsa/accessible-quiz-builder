@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Modal } from '../Modal/Modal';
-import { Button } from '../Button/Button';
+import { Modal } from '@components/Modal/Modal';
+import { Button } from '@components/Button/Button';
 import { Copy, Check, Twitter, Facebook, Linkedin, Mail } from 'lucide-react';
 
 interface PublishModalProps {

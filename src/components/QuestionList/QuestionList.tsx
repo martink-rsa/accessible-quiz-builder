@@ -1,6 +1,6 @@
-import { Question, QuestionType, Option } from '../../types/quiz';
-import { QuestionEditor } from '../QuestionEditor';
-import { Button } from '../Button';
+import { Question, QuestionType, Option } from '@/types/quiz';
+import { QuestionEditor } from '@components/QuestionEditor';
+import { Button } from '@components/Button';
 
 export interface QuestionListProps {
   /**

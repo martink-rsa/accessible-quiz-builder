@@ -1,10 +1,10 @@
 import {
   SingleChoiceQuestion as SingleChoiceQuestionType,
   QuestionType,
-} from '../../types/quiz';
-import { Input } from '../Input';
-import { Radio } from '../Radio';
-import { Button } from '../Button';
+} from '@/types/quiz';
+import { Input } from '@components/Input';
+import { Radio } from '@components/Radio';
+import { Button } from '@components/Button';
 import { Trash2 } from 'lucide-react';
 
 export interface SingleChoiceQuestionProps {

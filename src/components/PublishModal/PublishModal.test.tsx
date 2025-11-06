@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { renderAndCheckA11y } from '../../test-utils';
+import { renderAndCheckA11y } from '@/test-utils';
 import { PublishModal } from './PublishModal';
 
 // Mock clipboard API - ensure it exists

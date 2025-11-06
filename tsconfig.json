@@ -12,7 +12,16 @@
     "noEmit": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@tests/*": ["./src/__tests__/*"],
+      "@mocks/*": ["./src/__mocks__/*"]
+    }
   },
   "include": ["src", "jest.config.ts", "setupTests.ts"]
 }

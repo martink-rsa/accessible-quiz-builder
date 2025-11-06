@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import App from './App';
+import App from '@/App';
 
 /**
  * The main App component for the Accessible Quiz Builder.

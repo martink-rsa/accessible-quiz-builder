@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { QuestionType } from '../types/quiz';
+import { QuestionType } from '@/types/quiz';
 
 /**
  * Option schema for choice-based questions

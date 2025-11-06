@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { renderAndCheckA11y } from '../../test-utils';
+import { renderAndCheckA11y } from '@/test-utils';
 import { QuestionEditor } from './QuestionEditor';
-import { QuestionType } from '../../types/quiz';
+import { QuestionType } from '@/types/quiz';
 import type {
   SingleChoiceQuestion,
   MultipleChoiceQuestion,
   ShortTextQuestion,
-} from '../../types/quiz';
+} from '@/types/quiz';
 
 const singleChoiceQuestion: SingleChoiceQuestion = {
   id: '1',

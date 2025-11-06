@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
-import { useQuizReducer } from './hooks/useQuizReducer';
-import { useLocalStorage } from './hooks/useLocalStorage';
-import { Header } from './components/Header';
-import { QuestionList } from './components/QuestionList';
-import { QuizPreview } from './components/QuizPreview';
-import { Input } from './components/Input';
-import { Textarea } from './components/Input/Textarea';
-import { Button } from './components/Button';
-import { ButtonGroup } from './components/ButtonGroup';
-import { PublishModal } from './components/PublishModal/PublishModal';
-import { Footer } from './components/Footer';
+import { useQuizReducer } from '@hooks/useQuizReducer';
+import { useLocalStorage } from '@hooks/useLocalStorage';
+import { Header } from '@components/Header';
+import { QuestionList } from '@components/QuestionList';
+import { QuizPreview } from '@components/QuizPreview';
+import { Input } from '@components/Input';
+import { Textarea } from '@components/Input/Textarea';
+import { Button } from '@components/Button';
+import { ButtonGroup } from '@components/ButtonGroup';
+import { PublishModal } from '@components/PublishModal/PublishModal';
+import { Footer } from '@components/Footer';
 import { Edit, Eye, Trash2, Undo2, Redo2, Send } from 'lucide-react';
-import { isQuizValid } from './utils/validation';
-import type { Quiz } from './types/quiz';
+import { isQuizValid } from '@utils/validation';
+import type { Quiz } from '@/types/quiz';
 
 const STORAGE_KEY = 'accessible-quiz-builder-quiz';
 

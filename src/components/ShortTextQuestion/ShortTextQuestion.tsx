@@ -1,9 +1,9 @@
 import {
   ShortTextQuestion as ShortTextQuestionType,
   QuestionType,
-} from '../../types/quiz';
-import { Input } from '../Input';
-import { Textarea } from '../Input/Textarea';
+} from '@/types/quiz';
+import { Input } from '@components/Input';
+import { Textarea } from '@components/Input/Textarea';
 
 export interface ShortTextQuestionProps {
   /**

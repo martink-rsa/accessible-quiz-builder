@@ -1,5 +1,5 @@
-import { Quiz } from '../../types/quiz';
-import { QuestionEditor } from '../QuestionEditor';
+import { Quiz } from '@/types/quiz';
+import { QuestionEditor } from '@components/QuestionEditor';
 
 export interface QuizPreviewProps {
   /**

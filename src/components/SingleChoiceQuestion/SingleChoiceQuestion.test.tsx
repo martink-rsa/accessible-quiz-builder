@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { renderAndCheckA11y } from '../../test-utils';
+import { renderAndCheckA11y } from '@/test-utils';
 import { SingleChoiceQuestion } from './SingleChoiceQuestion';
-import { QuestionType } from '../../types/quiz';
-import type { SingleChoiceQuestion as SingleChoiceQuestionType } from '../../types/quiz';
+import { QuestionType } from '@/types/quiz';
+import type { SingleChoiceQuestion as SingleChoiceQuestionType } from '@/types/quiz';
 
 const mockQuestion: SingleChoiceQuestionType = {
   id: '1',

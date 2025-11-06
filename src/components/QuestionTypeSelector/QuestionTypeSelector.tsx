@@ -1,5 +1,5 @@
-import { QuestionType } from '../../types/quiz';
-import { Button } from '../Button';
+import { QuestionType } from '@/types/quiz';
+import { Button } from '@components/Button';
 
 export interface QuestionTypeSelectorProps {
   /**
