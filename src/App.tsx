@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useQuizReducer } from './hooks/useQuizReducer';
 import { useLocalStorage } from './hooks/useLocalStorage';
+import { Header } from './components/Header';
 import { QuestionList } from './components/QuestionList';
 import { QuizPreview } from './components/QuizPreview';
 import { Input } from './components/Input';
@@ -19,7 +20,6 @@ export default function App() {
   const [showClearConfirm, setShowClearConfirm] = useState(false);
   const [showPublishModal, setShowPublishModal] = useState(false);
 
-  // Initialize quiz from localStorage or create new
   const [storedQuiz, setStoredQuiz] = useLocalStorage<Quiz | null>(
     STORAGE_KEY,
     null,
@@ -50,7 +50,6 @@ export default function App() {
     },
   );
 
-  // Save to localStorage whenever quiz changes
   useEffect(() => {
     setStoredQuiz(quiz);
   }, [quiz, setStoredQuiz]);
@@ -62,13 +61,11 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-neutral-50">
+      <Header className="mb-6" />
+
       <div className="max-w-5xl mx-auto p-6">
-        {/* Header */}
-        <header className="bg-white border-b border-neutral-200 -mx-6 px-6 py-4 mb-6">
+        <div className="bg-white border border-neutral-200 rounded-lg shadow-sm px-6 py-4 mb-6">
           <div className="flex items-center justify-between mb-4">
-            <h1 className="text-3xl font-bold text-neutral-900">
-              Accessible Quiz Builder
-            </h1>
             <ButtonGroup aria-label="View mode">
               <Button
                 variant={mode === 'edit' ? 'primary' : 'ghost'}
@@ -89,7 +86,6 @@ export default function App() {
             </ButtonGroup>
           </div>
 
-          {/* Edit Mode Controls */}
           {mode === 'edit' && (
             <div className="flex items-center gap-2 border-t border-neutral-200 pt-4">
               <Button
@@ -160,12 +156,10 @@ export default function App() {
               </Button>
             </div>
           )}
-        </header>
+        </div>
 
-        {/* Content */}
         {mode === 'edit' ? (
           <div className="space-y-6">
-            {/* Quiz Metadata Container */}
             <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
               <h2 className="text-xl font-semibold mb-4">Quiz Details</h2>
               <div className="space-y-4">
@@ -187,7 +181,6 @@ export default function App() {
               </div>
             </div>
 
-            {/* Questions Container */}
             <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
               <h2 className="text-xl font-semibold mb-4">Questions</h2>
               <QuestionList
@@ -208,7 +201,6 @@ export default function App() {
           </div>
         )}
 
-        {/* Footer */}
         <footer className="mt-8 text-center text-sm text-neutral-600">
           <p>
             Built with accessibility in mind. Follows WCAG 2.2 Level AA
@@ -217,7 +209,6 @@ export default function App() {
         </footer>
       </div>
 
-      {/* Publish Modal */}
       <PublishModal
         isOpen={showPublishModal}
         onClose={() => setShowPublishModal(false)}
