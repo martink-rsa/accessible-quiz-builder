@@ -1,11 +1,12 @@
+import { Button } from '@components/Button';
+import { Checkbox } from '@components/Checkbox';
+import { Input } from '@components/Input';
+import { Trash2 } from 'lucide-react';
+
 import {
   MultipleChoiceQuestion as MultipleChoiceQuestionType,
   QuestionType,
-} from '../../types/quiz';
-import { Input } from '../Input';
-import { Checkbox } from '../Checkbox';
-import { Button } from '../Button';
-import { Trash2 } from 'lucide-react';
+} from '@/types/quiz';
 
 export interface MultipleChoiceQuestionProps {
   /**
@@ -104,10 +105,10 @@ export function MultipleChoiceQuestion({
     // Preview mode - student view
     return (
       <fieldset
-        className={`border border-neutral-200 rounded-lg p-4 ${className}`}
+        className={`rounded-lg border border-neutral-200 p-4 ${className}`}
       >
-        <legend className="text-lg font-semibold px-2">{question.title}</legend>
-        <p className="text-sm text-neutral-600 mt-2 mb-4">
+        <legend className="px-2 text-lg font-semibold">{question.title}</legend>
+        <p className="mt-2 mb-4 text-sm text-neutral-600">
           Select all that apply
         </p>
         <div className="space-y-3">
@@ -129,9 +130,9 @@ export function MultipleChoiceQuestion({
   const hasCorrectAnswer = correctCount >= 1;
 
   return (
-    <div className={`border border-neutral-200 rounded-lg p-4 ${className}`}>
+    <div className={`rounded-lg border border-neutral-200 p-4 ${className}`}>
       {/* Question Title and Type */}
-      <div className="flex gap-3 items-start">
+      <div className="flex items-start gap-3">
         <div className="flex-1">
           <Input
             label="Question"
@@ -146,7 +147,7 @@ export function MultipleChoiceQuestion({
           <div className="w-48">
             <label
               htmlFor={`question-type-${question.id}`}
-              className="block text-sm font-medium text-neutral-700 mb-1"
+              className="mb-1 block text-sm font-medium text-neutral-700"
             >
               Type
             </label>
@@ -154,7 +155,7 @@ export function MultipleChoiceQuestion({
               id={`question-type-${question.id}`}
               value={question.type}
               onChange={(e) => onTypeChange(e.target.value as QuestionType)}
-              className="w-full px-3 py-2 text-sm border border-neutral-300 rounded-md bg-white text-neutral-700 hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+              className="focus:ring-primary-500 focus:border-primary-500 w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 focus:ring-2 focus:outline-none"
               aria-label={`Question ${questionNumber} type`}
             >
               <option value={QuestionType.SINGLE_CHOICE}>Single Choice</option>
@@ -169,7 +170,7 @@ export function MultipleChoiceQuestion({
 
       {/* Options */}
       <div className="mt-4">
-        <div className="flex items-center justify-between mb-2">
+        <div className="mb-2 flex items-center justify-between">
           <div className="block text-sm font-medium text-neutral-700">
             Answer Options
             <span className="text-destructive-600 ml-1" aria-label="required">
@@ -187,13 +188,13 @@ export function MultipleChoiceQuestion({
         </div>
 
         {!hasMinOptions && (
-          <p className="text-sm text-destructive-600 mb-2" role="alert">
+          <p className="text-destructive-600 mb-2 text-sm" role="alert">
             Add at least 2 options
           </p>
         )}
 
         {!hasCorrectAnswer && hasMinOptions && (
-          <p className="text-sm text-destructive-600 mb-2" role="alert">
+          <p className="text-destructive-600 mb-2 text-sm" role="alert">
             Mark at least one option as correct
           </p>
         )}
@@ -208,7 +209,7 @@ export function MultipleChoiceQuestion({
                   id={`correct-${option.id}`}
                   checked={option.isCorrect}
                   onChange={() => onToggleCorrect?.(option.id)}
-                  className="w-5 h-5 border-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+                  className="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
                   aria-label={`Mark "${option.text || `Option ${index + 1}`}" as correct answer`}
                 />
               </div>
@@ -238,7 +239,7 @@ export function MultipleChoiceQuestion({
                   disabled={question.options.length <= 2}
                   aria-label={`Remove option ${index + 1}`}
                 >
-                  <Trash2 className="w-4 h-4" />
+                  <Trash2 className="h-4 w-4" />
                 </Button>
               </div>
             </div>
@@ -248,7 +249,7 @@ export function MultipleChoiceQuestion({
 
       {/* Validation Summary */}
       {hasMinOptions && hasCorrectAnswer && (
-        <div className="mt-4 text-sm text-primary-600" role="status">
+        <div className="text-primary-600 mt-4 text-sm" role="status">
           ✓ Question is valid ({correctCount} correct{' '}
           {correctCount === 1 ? 'answer' : 'answers'})
         </div>

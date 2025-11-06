@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import { renderAndCheckA11y } from '../../test-utils';
+
+import { renderAndCheckA11y } from '@/test-utils';
+import { QuestionType } from '@/types/quiz';
+import type { Quiz } from '@/types/quiz';
+
 import { QuizPreview } from './QuizPreview';
-import { QuestionType } from '../../types/quiz';
-import type { Quiz } from '../../types/quiz';
 
 const mockQuiz: Quiz = {
   id: '1',

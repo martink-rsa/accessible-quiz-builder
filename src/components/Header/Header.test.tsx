@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import { renderAndCheckA11y } from '../../test-utils';
+
+import { renderAndCheckA11y } from '@/test-utils';
+
 import { Header } from './Header';
 
 describe('Header', () => {

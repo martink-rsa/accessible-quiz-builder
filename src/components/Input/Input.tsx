@@ -1,4 +1,4 @@
-import { forwardRef, InputHTMLAttributes, useId } from 'react';
+import { InputHTMLAttributes, forwardRef, useId } from 'react';
 
 export interface InputProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
@@ -119,7 +119,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       <div className={wrapperClassName}>
         <label
           htmlFor={id}
-          className="block text-sm font-medium text-neutral-700 mb-1.5"
+          className="mb-1.5 block text-sm font-medium text-neutral-700"
         >
           {label}
           {required && (
@@ -144,7 +144,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         {error && (
           <p
             id={errorId}
-            className="mt-1.5 text-sm text-destructive-600"
+            className="text-destructive-600 mt-1.5 text-sm"
             role="alert"
           >
             {error}

@@ -5,7 +5,7 @@ exports[`Input Snapshots should match snapshot when disabled 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1h_"
   >
     Disabled
@@ -25,7 +25,7 @@ exports[`Input Snapshots should match snapshot when required 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1k_"
   >
     Required
@@ -53,7 +53,7 @@ exports[`Input Snapshots should match snapshot with all types 1`] = `
       class=""
     >
       <label
-        class="block text-sm font-medium text-neutral-700 mb-1.5"
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
         for="_r_1d_"
       >
         Text
@@ -69,7 +69,7 @@ exports[`Input Snapshots should match snapshot with all types 1`] = `
       class=""
     >
       <label
-        class="block text-sm font-medium text-neutral-700 mb-1.5"
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
         for="_r_1e_"
       >
         Email
@@ -85,7 +85,7 @@ exports[`Input Snapshots should match snapshot with all types 1`] = `
       class=""
     >
       <label
-        class="block text-sm font-medium text-neutral-700 mb-1.5"
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
         for="_r_1f_"
       >
         Password
@@ -101,7 +101,7 @@ exports[`Input Snapshots should match snapshot with all types 1`] = `
       class=""
     >
       <label
-        class="block text-sm font-medium text-neutral-700 mb-1.5"
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
         for="_r_1g_"
       >
         Number
@@ -122,7 +122,7 @@ exports[`Input Snapshots should match snapshot with default props 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1c_"
   >
     Email
@@ -141,7 +141,7 @@ exports[`Input Snapshots should match snapshot with error 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1i_"
   >
     Email
@@ -154,7 +154,7 @@ exports[`Input Snapshots should match snapshot with error 1`] = `
     type="text"
   />
   <p
-    class="mt-1.5 text-sm text-destructive-600"
+    class="text-destructive-600 mt-1.5 text-sm"
     id="_r_1i_-error"
     role="alert"
   >
@@ -168,7 +168,7 @@ exports[`Input Snapshots should match snapshot with help text 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1j_"
   >
     Password
@@ -194,7 +194,7 @@ exports[`Input Snapshots should match snapshot with placeholder 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1m_"
   >
     Email
@@ -214,7 +214,7 @@ exports[`Input Snapshots should match snapshot with value 1`] = `
   class=""
 >
   <label
-    class="block text-sm font-medium text-neutral-700 mb-1.5"
+    class="mb-1.5 block text-sm font-medium text-neutral-700"
     for="_r_1l_"
   >
     Name

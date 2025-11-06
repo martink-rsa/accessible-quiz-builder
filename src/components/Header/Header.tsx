@@ -1,4 +1,5 @@
 import { HTMLAttributes } from 'react';
+
 import logo from '../../../assets/logo-black-rectangle.png';
 
 export interface HeaderProps extends HTMLAttributes<HTMLElement> {
@@ -31,7 +32,7 @@ export const Header = ({ className = '', ...props }: HeaderProps) => {
 
   return (
     <header className={classes} {...props}>
-      <div className="max-w-5xl mx-auto">
+      <div className="mx-auto max-w-5xl">
         <img
           src={logo}
           alt="QUIZU - Accessible Quiz Builder"

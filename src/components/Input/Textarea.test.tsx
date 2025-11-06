@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { renderAndCheckA11y, checkA11y } from '../../test-utils';
+
+import { checkA11y, renderAndCheckA11y } from '@/test-utils';
+
 import { Textarea } from './Textarea';
 
 describe('Textarea', () => {

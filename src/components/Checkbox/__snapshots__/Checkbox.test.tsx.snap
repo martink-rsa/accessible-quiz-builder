@@ -191,7 +191,7 @@ exports[`Checkbox Snapshots should match snapshot with error 1`] = `
     </label>
   </div>
   <p
-    class="mt-1.5 text-sm text-destructive-600"
+    class="text-destructive-600 mt-1.5 text-sm"
     id="_r_1d_-error"
     role="alert"
   >

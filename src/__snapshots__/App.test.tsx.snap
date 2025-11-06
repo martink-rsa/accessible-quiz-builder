@@ -8,7 +8,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
     class="bg-white border-b border-neutral-200 px-6 py-4 mb-6"
   >
     <div
-      class="max-w-5xl mx-auto"
+      class="mx-auto max-w-5xl"
     >
       <img
         alt="QUIZU - Accessible Quiz Builder"
@@ -18,13 +18,13 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
     </div>
   </header>
   <div
-    class="max-w-5xl mx-auto p-6"
+    class="mx-auto max-w-5xl p-6"
   >
     <div
-      class="bg-white border border-neutral-200 rounded-lg shadow-sm px-6 py-4 mb-6"
+      class="mb-6 rounded-lg border border-neutral-200 bg-white px-6 py-4 shadow-sm"
     >
       <div
-        class="flex items-center justify-between mb-4"
+        class="mb-4 flex items-center justify-between"
       >
         <div
           aria-label="View mode"
@@ -40,7 +40,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="lucide lucide-square-pen w-4 h-4"
+              class="lucide lucide-square-pen h-4 w-4"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -69,7 +69,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="lucide lucide-eye w-4 h-4"
+              class="lucide lucide-eye h-4 w-4"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -106,7 +106,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="lucide lucide-undo2 lucide-undo-2 w-4 h-4"
+            class="lucide lucide-undo2 lucide-undo-2 h-4 w-4"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -136,7 +136,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="lucide lucide-redo2 lucide-redo-2 w-4 h-4"
+            class="lucide lucide-redo2 lucide-redo-2 h-4 w-4"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -168,7 +168,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+            class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -207,7 +207,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="lucide lucide-send w-4 h-4"
+            class="lucide lucide-send h-4 w-4"
             fill="none"
             height="24"
             stroke="currentColor"
@@ -233,10 +233,10 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
       class="space-y-6"
     >
       <div
-        class="bg-white rounded-lg shadow-sm border border-neutral-200 p-6"
+        class="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm"
       >
         <h2
-          class="text-xl font-semibold mb-4"
+          class="mb-4 text-xl font-semibold"
         >
           Quiz Details
         </h2>
@@ -247,7 +247,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
             class=""
           >
             <label
-              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              class="mb-1.5 block text-sm font-medium text-neutral-700"
               for="_r_a_"
             >
               Quiz Title
@@ -272,7 +272,7 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
             class=""
           >
             <label
-              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              class="mb-1.5 block text-sm font-medium text-neutral-700"
               for="_r_b_"
             >
               Quiz Description
@@ -295,10 +295,10 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
         </div>
       </div>
       <div
-        class="bg-white rounded-lg shadow-sm border border-neutral-200 p-6"
+        class="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm"
       >
         <h2
-          class="text-xl font-semibold mb-4"
+          class="mb-4 text-xl font-semibold"
         >
           Questions
         </h2>
@@ -306,15 +306,15 @@ exports[`Snapshots should match snapshot in edit mode 1`] = `
           class="space-y-6"
         >
           <div
-            class="text-center py-12 border-2 border-dashed border-neutral-300 rounded-lg"
+            class="rounded-lg border-2 border-dashed border-neutral-300 py-12 text-center"
           >
             <p
-              class="text-neutral-600 mb-4"
+              class="mb-4 text-neutral-600"
             >
               No questions yet
             </p>
             <p
-              class="text-neutral-500 text-sm mb-6"
+              class="mb-6 text-sm text-neutral-500"
             >
               Get started by adding your first question to the quiz
             </p>

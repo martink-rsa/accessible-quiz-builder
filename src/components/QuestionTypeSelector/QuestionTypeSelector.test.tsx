@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { renderAndCheckA11y } from '../../test-utils';
+
+import { renderAndCheckA11y } from '@/test-utils';
+import { QuestionType } from '@/types/quiz';
+
 import { QuestionTypeSelector } from './QuestionTypeSelector';
-import { QuestionType } from '../../types/quiz';
 
 describe('QuestionTypeSelector', () => {
   it('should have no accessibility violations', async () => {

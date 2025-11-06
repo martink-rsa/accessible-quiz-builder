@@ -5,7 +5,7 @@ exports[`Header Snapshots should match snapshot with custom className 1`] = `
   class="bg-white border-b border-neutral-200 px-6 py-4 shadow-lg"
 >
   <div
-    class="max-w-5xl mx-auto"
+    class="mx-auto max-w-5xl"
   >
     <img
       alt="QUIZU - Accessible Quiz Builder"
@@ -21,7 +21,7 @@ exports[`Header Snapshots should match snapshot with default props 1`] = `
   class="bg-white border-b border-neutral-200 px-6 py-4 "
 >
   <div
-    class="max-w-5xl mx-auto"
+    class="mx-auto max-w-5xl"
   >
     <img
       alt="QUIZU - Accessible Quiz Builder"

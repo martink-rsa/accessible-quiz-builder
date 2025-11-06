@@ -14,11 +14,11 @@ exports[`Modal Snapshots should match snapshot when open 1`] = `
     class="fixed inset-0 bg-black/50 backdrop-blur-sm"
   />
   <div
-    class="relative z-10 bg-white rounded-lg shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto"
+    class="relative z-10 mx-4 max-h-[90vh] w-full max-w-md overflow-y-auto rounded-lg bg-white shadow-xl"
     tabindex="-1"
   >
     <div
-      class="flex items-center justify-between p-6 border-b border-gray-200"
+      class="flex items-center justify-between border-b border-gray-200 p-6"
     >
       <h2
         class="text-xl font-semibold text-gray-900"
@@ -28,11 +28,11 @@ exports[`Modal Snapshots should match snapshot when open 1`] = `
       </h2>
       <button
         aria-label="Close modal"
-        class="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-1"
+        class="rounded-lg p-1 text-gray-400 hover:text-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
       >
         <svg
           aria-hidden="true"
-          class="lucide lucide-x w-5 h-5"
+          class="lucide lucide-x h-5 w-5"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -75,11 +75,11 @@ exports[`Modal Snapshots should match snapshot with complex children 1`] = `
     class="fixed inset-0 bg-black/50 backdrop-blur-sm"
   />
   <div
-    class="relative z-10 bg-white rounded-lg shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto"
+    class="relative z-10 mx-4 max-h-[90vh] w-full max-w-md overflow-y-auto rounded-lg bg-white shadow-xl"
     tabindex="-1"
   >
     <div
-      class="flex items-center justify-between p-6 border-b border-gray-200"
+      class="flex items-center justify-between border-b border-gray-200 p-6"
     >
       <h2
         class="text-xl font-semibold text-gray-900"
@@ -89,11 +89,11 @@ exports[`Modal Snapshots should match snapshot with complex children 1`] = `
       </h2>
       <button
         aria-label="Close modal"
-        class="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-1"
+        class="rounded-lg p-1 text-gray-400 hover:text-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
       >
         <svg
           aria-hidden="true"
-          class="lucide lucide-x w-5 h-5"
+          class="lucide lucide-x h-5 w-5"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -144,11 +144,11 @@ exports[`Modal Snapshots should match snapshot with custom title 1`] = `
     class="fixed inset-0 bg-black/50 backdrop-blur-sm"
   />
   <div
-    class="relative z-10 bg-white rounded-lg shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto"
+    class="relative z-10 mx-4 max-h-[90vh] w-full max-w-md overflow-y-auto rounded-lg bg-white shadow-xl"
     tabindex="-1"
   >
     <div
-      class="flex items-center justify-between p-6 border-b border-gray-200"
+      class="flex items-center justify-between border-b border-gray-200 p-6"
     >
       <h2
         class="text-xl font-semibold text-gray-900"
@@ -158,11 +158,11 @@ exports[`Modal Snapshots should match snapshot with custom title 1`] = `
       </h2>
       <button
         aria-label="Close modal"
-        class="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-1"
+        class="rounded-lg p-1 text-gray-400 hover:text-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
       >
         <svg
           aria-hidden="true"
-          class="lucide lucide-x w-5 h-5"
+          class="lucide lucide-x h-5 w-5"
           fill="none"
           height="24"
           stroke="currentColor"

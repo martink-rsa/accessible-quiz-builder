@@ -1,4 +1,4 @@
-import { render, RenderOptions, RenderResult } from '@testing-library/react';
+import { RenderOptions, RenderResult, render } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import { ReactElement } from 'react';
 

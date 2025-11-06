@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 interface ModalProps {
   isOpen: boolean;
@@ -65,20 +65,20 @@ export function Modal({ isOpen, onClose, title, children }: ModalProps) {
       {/* Modal Content */}
       <div
         ref={modalRef}
-        className="relative z-10 bg-white rounded-lg shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto"
+        className="relative z-10 mx-4 max-h-[90vh] w-full max-w-md overflow-y-auto rounded-lg bg-white shadow-xl"
         tabIndex={-1}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-200">
+        <div className="flex items-center justify-between border-b border-gray-200 p-6">
           <h2 id="modal-title" className="text-xl font-semibold text-gray-900">
             {title}
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-1"
+            className="rounded-lg p-1 text-gray-400 hover:text-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none"
             aria-label="Close modal"
           >
-            <X className="w-5 h-5" />
+            <X className="h-5 w-5" />
           </button>
         </div>
 

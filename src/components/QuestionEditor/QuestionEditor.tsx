@@ -1,8 +1,9 @@
-import { Question, QuestionType } from '../../types/quiz';
-import { SingleChoiceQuestion } from '../SingleChoiceQuestion';
-import { MultipleChoiceQuestion } from '../MultipleChoiceQuestion';
-import { ShortTextQuestion } from '../ShortTextQuestion';
+import { MultipleChoiceQuestion } from '@components/MultipleChoiceQuestion';
+import { ShortTextQuestion } from '@components/ShortTextQuestion';
+import { SingleChoiceQuestion } from '@components/SingleChoiceQuestion';
 import { Trash2 } from 'lucide-react';
+
+import { Question, QuestionType } from '@/types/quiz';
 
 export interface QuestionEditorProps {
   /**
@@ -94,16 +95,16 @@ export function QuestionEditor({
     <div className="relative">
       {/* Question Header (Edit mode only) */}
       {!preview && (
-        <div className="flex items-center justify-between mb-2">
+        <div className="mb-2 flex items-center justify-between">
           <h3 className="text-lg font-semibold text-neutral-900">
             Question {questionNumber}
           </h3>
           <button
             onClick={onRemove}
-            className="px-3 py-1 text-sm font-medium text-destructive-600 hover:text-destructive-700 hover:bg-destructive-50 rounded-md transition-colors flex items-center gap-1.5"
+            className="text-destructive-600 hover:text-destructive-700 hover:bg-destructive-50 flex items-center gap-1.5 rounded-md px-3 py-1 text-sm font-medium transition-colors"
             aria-label={`Remove question ${questionNumber}`}
           >
-            <Trash2 className="w-4 h-4" />
+            <Trash2 className="h-4 w-4" />
             Remove Question
           </button>
         </div>

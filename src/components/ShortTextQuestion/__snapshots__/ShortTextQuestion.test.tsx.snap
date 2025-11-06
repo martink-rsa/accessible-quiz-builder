@@ -2,10 +2,10 @@
 
 exports[`ShortTextQuestion Snapshots should match snapshot in edit mode 1`] = `
 <div
-  class="border border-neutral-200 rounded-lg p-4 "
+  class="rounded-lg border border-neutral-200 p-4 "
 >
   <div
-    class="flex gap-3 items-start"
+    class="flex items-start gap-3"
   >
     <div
       class="flex-1"
@@ -14,7 +14,7 @@ exports[`ShortTextQuestion Snapshots should match snapshot in edit mode 1`] = `
         class=""
       >
         <label
-          class="block text-sm font-medium text-neutral-700 mb-1.5"
+          class="mb-1.5 block text-sm font-medium text-neutral-700"
           for="_r_q_"
         >
           Question
@@ -48,12 +48,12 @@ exports[`ShortTextQuestion Snapshots should match snapshot in edit mode 1`] = `
     class="mt-4 border-t border-neutral-200 pt-4"
   >
     <p
-      class="text-sm font-medium text-neutral-700 mb-2"
+      class="mb-2 text-sm font-medium text-neutral-700"
     >
       Preview:
     </p>
     <p
-      class="text-base text-neutral-900 mb-2"
+      class="mb-2 text-base text-neutral-900"
     >
       Explain the concept of polymorphism in programming.
     </p>
@@ -61,7 +61,7 @@ exports[`ShortTextQuestion Snapshots should match snapshot in edit mode 1`] = `
       class=""
     >
       <label
-        class="block text-sm font-medium text-neutral-700 mb-1.5"
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
         for="_r_r_"
       >
         Student answer area
@@ -77,7 +77,7 @@ exports[`ShortTextQuestion Snapshots should match snapshot in edit mode 1`] = `
     </div>
   </div>
   <div
-    class="mt-4 text-sm text-primary-600"
+    class="text-primary-600 mt-4 text-sm"
     role="status"
   >
     ✓ Question is valid
@@ -87,10 +87,10 @@ exports[`ShortTextQuestion Snapshots should match snapshot in edit mode 1`] = `
 
 exports[`ShortTextQuestion Snapshots should match snapshot in preview mode 1`] = `
 <div
-  class="border border-neutral-200 rounded-lg p-4 "
+  class="rounded-lg border border-neutral-200 p-4 "
 >
   <label
-    class="text-lg font-semibold block mb-4"
+    class="mb-4 block text-lg font-semibold"
   >
     Explain the concept of polymorphism in programming.
   </label>
@@ -98,7 +98,7 @@ exports[`ShortTextQuestion Snapshots should match snapshot in preview mode 1`] =
     class=""
   >
     <label
-      class="block text-sm font-medium text-neutral-700 mb-1.5"
+      class="mb-1.5 block text-sm font-medium text-neutral-700"
       for="_r_s_"
     >
       Your Answer
@@ -116,10 +116,10 @@ exports[`ShortTextQuestion Snapshots should match snapshot in preview mode 1`] =
 
 exports[`ShortTextQuestion Snapshots should match snapshot with custom className 1`] = `
 <div
-  class="border border-neutral-200 rounded-lg p-4 custom-class"
+  class="rounded-lg border border-neutral-200 p-4 custom-class"
 >
   <div
-    class="flex gap-3 items-start"
+    class="flex items-start gap-3"
   >
     <div
       class="flex-1"
@@ -128,7 +128,7 @@ exports[`ShortTextQuestion Snapshots should match snapshot with custom className
         class=""
       >
         <label
-          class="block text-sm font-medium text-neutral-700 mb-1.5"
+          class="mb-1.5 block text-sm font-medium text-neutral-700"
           for="_r_t_"
         >
           Question
@@ -162,12 +162,12 @@ exports[`ShortTextQuestion Snapshots should match snapshot with custom className
     class="mt-4 border-t border-neutral-200 pt-4"
   >
     <p
-      class="text-sm font-medium text-neutral-700 mb-2"
+      class="mb-2 text-sm font-medium text-neutral-700"
     >
       Preview:
     </p>
     <p
-      class="text-base text-neutral-900 mb-2"
+      class="mb-2 text-base text-neutral-900"
     >
       Explain the concept of polymorphism in programming.
     </p>
@@ -175,7 +175,7 @@ exports[`ShortTextQuestion Snapshots should match snapshot with custom className
       class=""
     >
       <label
-        class="block text-sm font-medium text-neutral-700 mb-1.5"
+        class="mb-1.5 block text-sm font-medium text-neutral-700"
         for="_r_u_"
       >
         Student answer area
@@ -191,7 +191,7 @@ exports[`ShortTextQuestion Snapshots should match snapshot with custom className
     </div>
   </div>
   <div
-    class="mt-4 text-sm text-primary-600"
+    class="text-primary-600 mt-4 text-sm"
     role="status"
   >
     ✓ Question is valid

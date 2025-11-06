@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+
 import { Checkbox } from './Checkbox';
 
 const meta = {
@@ -191,10 +192,10 @@ export const MultipleChoiceExample: Story = {
   render: () => (
     <div className="space-y-4" style={{ width: '500px' }}>
       <div className="mb-4">
-        <h3 className="text-lg font-semibold mb-2">
+        <h3 className="mb-2 text-lg font-semibold">
           Which of the following are programming languages?
         </h3>
-        <p className="text-sm text-neutral-600 mb-4">
+        <p className="mb-4 text-sm text-neutral-600">
           Select all correct answers
         </p>
       </div>
@@ -215,10 +216,10 @@ export const QuizBuilderExample: Story = {
   render: () => (
     <div className="space-y-4" style={{ width: '500px' }}>
       <div className="mb-4">
-        <h3 className="text-lg font-semibold mb-2">
+        <h3 className="mb-2 text-lg font-semibold">
           Which of the following are programming languages?
         </h3>
-        <p className="text-sm text-neutral-600 mb-4">
+        <p className="mb-4 text-sm text-neutral-600">
           Mark all correct answers
         </p>
       </div>
@@ -254,7 +255,7 @@ export const ConsentFormExample: Story = {
     >
       <div className="mb-4">
         <h2 className="text-xl font-bold">Quiz Submission</h2>
-        <p className="text-sm text-neutral-600 mt-1">
+        <p className="mt-1 text-sm text-neutral-600">
           Please review and accept the following before submitting
         </p>
       </div>

@@ -2,10 +2,10 @@
 
 exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`] = `
 <div
-  class="border border-neutral-200 rounded-lg p-4 "
+  class="rounded-lg border border-neutral-200 p-4 "
 >
   <div
-    class="flex gap-3 items-start"
+    class="flex items-start gap-3"
   >
     <div
       class="flex-1"
@@ -14,7 +14,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
         class=""
       >
         <label
-          class="block text-sm font-medium text-neutral-700 mb-1.5"
+          class="mb-1.5 block text-sm font-medium text-neutral-700"
           for="_r_29_"
         >
           Question
@@ -41,7 +41,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
     class="mt-4"
   >
     <div
-      class="flex items-center justify-between mb-2"
+      class="mb-2 flex items-center justify-between"
     >
       <div
         class="block text-sm font-medium text-neutral-700"
@@ -76,7 +76,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
           <input
             aria-label="Mark "Python" as correct answer"
             checked=""
-            class="w-5 h-5 border-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+            class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
             id="correct-1"
             type="checkbox"
           />
@@ -88,7 +88,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
             class=""
           >
             <label
-              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              class="mb-1.5 block text-sm font-medium text-neutral-700"
               for="_r_2a_"
             >
               Option 1
@@ -129,7 +129,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
           >
             <svg
               aria-hidden="true"
-              class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+              class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -167,7 +167,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
         >
           <input
             aria-label="Mark "HTML" as correct answer"
-            class="w-5 h-5 border-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+            class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
             id="correct-2"
             type="checkbox"
           />
@@ -179,7 +179,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
             class=""
           >
             <label
-              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              class="mb-1.5 block text-sm font-medium text-neutral-700"
               for="_r_2b_"
             >
               Option 2
@@ -220,7 +220,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
           >
             <svg
               aria-hidden="true"
-              class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+              class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -259,7 +259,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
           <input
             aria-label="Mark "JavaScript" as correct answer"
             checked=""
-            class="w-5 h-5 border-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+            class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
             id="correct-3"
             type="checkbox"
           />
@@ -271,7 +271,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
             class=""
           >
             <label
-              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              class="mb-1.5 block text-sm font-medium text-neutral-700"
               for="_r_2c_"
             >
               Option 3
@@ -312,7 +312,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
           >
             <svg
               aria-hidden="true"
-              class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+              class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -345,7 +345,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
     </div>
   </div>
   <div
-    class="mt-4 text-sm text-primary-600"
+    class="text-primary-600 mt-4 text-sm"
     role="status"
   >
     ✓ Question is valid (
@@ -360,15 +360,15 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in edit mode 1`]
 
 exports[`MultipleChoiceQuestion Snapshots should match snapshot in preview mode 1`] = `
 <fieldset
-  class="border border-neutral-200 rounded-lg p-4 "
+  class="rounded-lg border border-neutral-200 p-4 "
 >
   <legend
-    class="text-lg font-semibold px-2"
+    class="px-2 text-lg font-semibold"
   >
     Which are programming languages?
   </legend>
   <p
-    class="text-sm text-neutral-600 mt-2 mb-4"
+    class="mt-2 mb-4 text-sm text-neutral-600"
   >
     Select all that apply
   </p>
@@ -444,10 +444,10 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot in preview mode 
 
 exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom className 1`] = `
 <div
-  class="border border-neutral-200 rounded-lg p-4 custom-class"
+  class="rounded-lg border border-neutral-200 p-4 custom-class"
 >
   <div
-    class="flex gap-3 items-start"
+    class="flex items-start gap-3"
   >
     <div
       class="flex-1"
@@ -456,7 +456,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
         class=""
       >
         <label
-          class="block text-sm font-medium text-neutral-700 mb-1.5"
+          class="mb-1.5 block text-sm font-medium text-neutral-700"
           for="_r_2g_"
         >
           Question
@@ -483,7 +483,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
     class="mt-4"
   >
     <div
-      class="flex items-center justify-between mb-2"
+      class="mb-2 flex items-center justify-between"
     >
       <div
         class="block text-sm font-medium text-neutral-700"
@@ -518,7 +518,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
           <input
             aria-label="Mark "Python" as correct answer"
             checked=""
-            class="w-5 h-5 border-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+            class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
             id="correct-1"
             type="checkbox"
           />
@@ -530,7 +530,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
             class=""
           >
             <label
-              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              class="mb-1.5 block text-sm font-medium text-neutral-700"
               for="_r_2h_"
             >
               Option 1
@@ -571,7 +571,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
           >
             <svg
               aria-hidden="true"
-              class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+              class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -609,7 +609,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
         >
           <input
             aria-label="Mark "HTML" as correct answer"
-            class="w-5 h-5 border-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+            class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
             id="correct-2"
             type="checkbox"
           />
@@ -621,7 +621,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
             class=""
           >
             <label
-              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              class="mb-1.5 block text-sm font-medium text-neutral-700"
               for="_r_2i_"
             >
               Option 2
@@ -662,7 +662,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
           >
             <svg
               aria-hidden="true"
-              class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+              class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -701,7 +701,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
           <input
             aria-label="Mark "JavaScript" as correct answer"
             checked=""
-            class="w-5 h-5 border-2 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-neutral-300 focus:ring-primary-500 text-primary-600 bg-white cursor-pointer"
+            class="focus:ring-primary-500 text-primary-600 h-5 w-5 cursor-pointer rounded border-2 border-neutral-300 bg-white transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
             id="correct-3"
             type="checkbox"
           />
@@ -713,7 +713,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
             class=""
           >
             <label
-              class="block text-sm font-medium text-neutral-700 mb-1.5"
+              class="mb-1.5 block text-sm font-medium text-neutral-700"
               for="_r_2j_"
             >
               Option 3
@@ -754,7 +754,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
           >
             <svg
               aria-hidden="true"
-              class="lucide lucide-trash2 lucide-trash-2 w-4 h-4"
+              class="lucide lucide-trash2 lucide-trash-2 h-4 w-4"
               fill="none"
               height="24"
               stroke="currentColor"
@@ -787,7 +787,7 @@ exports[`MultipleChoiceQuestion Snapshots should match snapshot with custom clas
     </div>
   </div>
   <div
-    class="mt-4 text-sm text-primary-600"
+    class="text-primary-600 mt-4 text-sm"
     role="status"
   >
     ✓ Question is valid (
