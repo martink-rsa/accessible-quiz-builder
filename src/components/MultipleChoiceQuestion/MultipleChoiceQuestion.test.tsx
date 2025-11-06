@@ -1,9 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+
 import { renderAndCheckA11y } from '@/test-utils';
-import { MultipleChoiceQuestion } from './MultipleChoiceQuestion';
 import { QuestionType } from '@/types/quiz';
 import type { MultipleChoiceQuestion as MultipleChoiceQuestionType } from '@/types/quiz';
+
+import { MultipleChoiceQuestion } from './MultipleChoiceQuestion';
 
 const mockQuestion: MultipleChoiceQuestionType = {
   id: '1',

@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { Modal } from '@components/Modal/Modal';
 import { Button } from '@components/Button/Button';
-import { Copy, Check, Twitter, Facebook, Linkedin, Mail } from 'lucide-react';
+import { Modal } from '@components/Modal/Modal';
+import { Check, Copy, Facebook, Linkedin, Mail, Twitter } from 'lucide-react';
+import { useState } from 'react';
 
 interface PublishModalProps {
   isOpen: boolean;
@@ -62,8 +62,8 @@ export function PublishModal({
     <Modal isOpen={isOpen} onClose={onClose} title="Publish Quiz">
       <div className="space-y-6">
         <div className="text-center">
-          <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-full mb-3">
-            <Check className="w-6 h-6 text-green-600" />
+          <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+            <Check className="h-6 w-6 text-green-600" />
           </div>
           <p className="text-gray-700">
             Your quiz is ready to share! Use the link below to let others take
@@ -84,7 +84,7 @@ export function PublishModal({
               type="text"
               value={quizUrl}
               readOnly
-              className="flex-1 px-3 py-2 border border-gray-300 rounded-lg bg-gray-50 text-gray-900 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 rounded-lg border border-gray-300 bg-gray-50 px-3 py-2 font-mono text-sm text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               onClick={(e) => e.currentTarget.select()}
             />
             <Button
@@ -95,12 +95,12 @@ export function PublishModal({
             >
               {copied ? (
                 <>
-                  <Check className="w-4 h-4" />
+                  <Check className="h-4 w-4" />
                   Copied!
                 </>
               ) : (
                 <>
-                  <Copy className="w-4 h-4" />
+                  <Copy className="h-4 w-4" />
                   Copy
                 </>
               )}
@@ -119,7 +119,7 @@ export function PublishModal({
               size="md"
               className="justify-center"
             >
-              <Twitter className="w-4 h-4" />
+              <Twitter className="h-4 w-4" />
               Twitter
             </Button>
             <Button
@@ -128,7 +128,7 @@ export function PublishModal({
               size="md"
               className="justify-center"
             >
-              <Facebook className="w-4 h-4" />
+              <Facebook className="h-4 w-4" />
               Facebook
             </Button>
             <Button
@@ -137,7 +137,7 @@ export function PublishModal({
               size="md"
               className="justify-center"
             >
-              <Linkedin className="w-4 h-4" />
+              <Linkedin className="h-4 w-4" />
               LinkedIn
             </Button>
             <Button
@@ -146,13 +146,13 @@ export function PublishModal({
               size="md"
               className="justify-center"
             >
-              <Mail className="w-4 h-4" />
+              <Mail className="h-4 w-4" />
               Email
             </Button>
           </div>
         </div>
 
-        <div className="pt-4 border-t border-gray-200">
+        <div className="border-t border-gray-200 pt-4">
           <Button
             onClick={onClose}
             variant="primary"

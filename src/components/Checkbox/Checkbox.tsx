@@ -1,4 +1,4 @@
-import { forwardRef, InputHTMLAttributes, useId } from 'react';
+import { InputHTMLAttributes, forwardRef, useId } from 'react';
 
 export interface CheckboxProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'type'> {
@@ -148,7 +148,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
         {error && (
           <p
             id={errorId}
-            className="mt-1.5 text-sm text-destructive-600"
+            className="text-destructive-600 mt-1.5 text-sm"
             role="alert"
           >
             {error}

@@ -1,5 +1,6 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+
 import App from '@/App';
 import { renderAndCheckA11y } from '@/test-utils';
 

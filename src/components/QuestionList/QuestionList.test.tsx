@@ -1,9 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+
 import { renderAndCheckA11y } from '@/test-utils';
-import { QuestionList } from './QuestionList';
 import { QuestionType } from '@/types/quiz';
 import type { Question } from '@/types/quiz';
+
+import { QuestionList } from './QuestionList';
 
 const mockQuestions: Question[] = [
   {

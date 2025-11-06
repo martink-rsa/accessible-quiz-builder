@@ -1,5 +1,6 @@
-import { Quiz } from '@/types/quiz';
 import { QuestionEditor } from '@components/QuestionEditor';
+
+import { Quiz } from '@/types/quiz';
 
 export interface QuizPreviewProps {
   /**
@@ -26,8 +27,8 @@ export interface QuizPreviewProps {
 export function QuizPreview({ quiz, className = '' }: QuizPreviewProps) {
   if (quiz.questions.length === 0) {
     return (
-      <div className={`text-center py-12 ${className}`}>
-        <p className="text-neutral-600 text-lg">
+      <div className={`py-12 text-center ${className}`}>
+        <p className="text-lg text-neutral-600">
           No questions in this quiz yet. Add questions in Edit mode to see them
           here.
         </p>
@@ -40,7 +41,7 @@ export function QuizPreview({ quiz, className = '' }: QuizPreviewProps) {
       {/* Quiz Header */}
       <div className="mb-8">
         {quiz.title && (
-          <h1 className="text-3xl font-bold text-neutral-900 mb-2">
+          <h1 className="mb-2 text-3xl font-bold text-neutral-900">
             {quiz.title}
           </h1>
         )}
@@ -48,18 +49,18 @@ export function QuizPreview({ quiz, className = '' }: QuizPreviewProps) {
           <p className="text-lg text-neutral-600">{quiz.description}</p>
         )}
         {!quiz.title && !quiz.description && (
-          <h1 className="text-3xl font-bold text-neutral-900 mb-2">
+          <h1 className="mb-2 text-3xl font-bold text-neutral-900">
             Untitled Quiz
           </h1>
         )}
       </div>
 
       {/* Quiz Instructions */}
-      <div className="mb-6 p-4 bg-primary-50 border border-primary-200 rounded-lg">
-        <h2 className="text-lg font-semibold text-primary-900 mb-2">
+      <div className="bg-primary-50 border-primary-200 mb-6 rounded-lg border p-4">
+        <h2 className="text-primary-900 mb-2 text-lg font-semibold">
           Instructions
         </h2>
-        <ul className="text-sm text-primary-800 space-y-1 list-disc list-inside">
+        <ul className="text-primary-800 list-inside list-disc space-y-1 text-sm">
           <li>Read each question carefully</li>
           <li>Select your answer(s) for choice questions</li>
           <li>Type your response for text questions</li>
@@ -88,8 +89,8 @@ export function QuizPreview({ quiz, className = '' }: QuizPreviewProps) {
       </form>
 
       {/* Footer Note */}
-      <div className="mt-8 p-4 bg-neutral-50 border border-neutral-200 rounded-lg">
-        <p className="text-sm text-neutral-600 text-center">
+      <div className="mt-8 rounded-lg border border-neutral-200 bg-neutral-50 p-4">
+        <p className="text-center text-sm text-neutral-600">
           This is a preview of your quiz. Switch to Edit mode to make changes.
         </p>
       </div>

@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+
 import { Footer } from './Footer';
 
 const meta: Meta<typeof Footer> = {
@@ -40,10 +41,10 @@ export const CustomStyling: Story = {
  */
 export const InPageContext: Story = {
   render: () => (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-1 p-8 bg-neutral-50">
-        <div className="max-w-5xl mx-auto">
-          <h1 className="text-3xl font-bold mb-4">Page Content</h1>
+    <div className="flex min-h-screen flex-col">
+      <main className="flex-1 bg-neutral-50 p-8">
+        <div className="mx-auto max-w-5xl">
+          <h1 className="mb-4 text-3xl font-bold">Page Content</h1>
           <p className="text-neutral-700">
             This demonstrates how the footer appears at the bottom of a page.
           </p>

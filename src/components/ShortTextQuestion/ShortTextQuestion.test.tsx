@@ -1,9 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+
 import { renderAndCheckA11y } from '@/test-utils';
-import { ShortTextQuestion } from './ShortTextQuestion';
 import { QuestionType } from '@/types/quiz';
 import type { ShortTextQuestion as ShortTextQuestionType } from '@/types/quiz';
+
+import { ShortTextQuestion } from './ShortTextQuestion';
 
 const mockQuestion: ShortTextQuestionType = {
   id: '1',

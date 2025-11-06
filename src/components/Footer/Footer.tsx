@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Github, Instagram } from 'lucide-react';
+import { Facebook, Github, Instagram, Linkedin, Twitter } from 'lucide-react';
 
 export interface FooterProps {
   /**
@@ -36,16 +36,16 @@ export function Footer({ className = '' }: FooterProps) {
 
   return (
     <footer
-      className={`bg-white border-t border-neutral-200 py-8 ${className}`}
+      className={`border-t border-neutral-200 bg-white py-8 ${className}`}
       role="contentinfo"
     >
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="mb-6 flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-3">
             <img
               src="/assets/logo-black-square.png"
               alt="QUIZU - Accessible Quiz Builder"
-              className="w-12 h-12"
+              className="h-12 w-12"
             />
           </div>
 
@@ -56,9 +56,9 @@ export function Footer({ className = '' }: FooterProps) {
                   <a
                     href={url}
                     aria-label={`Visit our ${name} page`}
-                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-neutral-100 text-neutral-700 hover:bg-neutral-200 hover:text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 transition-colors"
+                    className="focus-visible:ring-primary-500 inline-flex h-10 w-10 items-center justify-center rounded-full bg-neutral-100 text-neutral-700 transition-colors hover:bg-neutral-200 hover:text-neutral-900 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
                   >
-                    <Icon className="w-5 h-5" aria-hidden="true" />
+                    <Icon className="h-5 w-5" aria-hidden="true" />
                   </a>
                 </li>
               ))}

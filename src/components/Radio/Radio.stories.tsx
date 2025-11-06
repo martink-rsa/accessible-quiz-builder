@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+
 import { Radio } from './Radio';
 
 const meta = {
@@ -227,7 +228,7 @@ export const SingleChoiceExample: Story = {
   args: { label: 'Single choice example' },
   render: () => (
     <fieldset className="space-y-4" style={{ width: '500px' }}>
-      <legend className="text-lg font-semibold mb-4">
+      <legend className="mb-4 text-lg font-semibold">
         What is the best programming language?
       </legend>
       <Radio name="language" label="Python" value="python" />
@@ -245,10 +246,10 @@ export const QuizBuilderExample: Story = {
   args: { label: 'Quiz builder example' },
   render: () => (
     <fieldset className="space-y-4" style={{ width: '500px' }}>
-      <legend className="text-lg font-semibold mb-2">
+      <legend className="mb-2 text-lg font-semibold">
         What is the best programming language?
       </legend>
-      <p className="text-sm text-neutral-600 mb-4">Mark the correct answer</p>
+      <p className="mb-4 text-sm text-neutral-600">Mark the correct answer</p>
       <Radio
         name="language"
         label="Python"
@@ -276,7 +277,7 @@ export const DifficultySelectionExample: Story = {
       onSubmit={(e) => e.preventDefault()}
     >
       <fieldset>
-        <legend className="text-xl font-bold mb-4">
+        <legend className="mb-4 text-xl font-bold">
           Select Quiz Difficulty
         </legend>
         <div className="space-y-3">
@@ -322,13 +323,13 @@ export const RequiredGroupExample: Story = {
       onSubmit={(e) => e.preventDefault()}
     >
       <fieldset>
-        <legend className="text-lg font-semibold mb-1">
+        <legend className="mb-1 text-lg font-semibold">
           Choose your answer{' '}
           <span className="text-destructive-600" aria-label="required">
             *
           </span>
         </legend>
-        <p className="text-sm text-neutral-600 mb-4">
+        <p className="mb-4 text-sm text-neutral-600">
           You must select one option
         </p>
         <div className="space-y-3">

@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
+
 import { Footer } from './Footer';
 
 expect.extend(toHaveNoViolations);

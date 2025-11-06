@@ -1,9 +1,10 @@
-import {
-  ShortTextQuestion as ShortTextQuestionType,
-  QuestionType,
-} from '@/types/quiz';
 import { Input } from '@components/Input';
 import { Textarea } from '@components/Input/Textarea';
+
+import {
+  QuestionType,
+  ShortTextQuestion as ShortTextQuestionType,
+} from '@/types/quiz';
 
 export interface ShortTextQuestionProps {
   /**
@@ -71,8 +72,8 @@ export function ShortTextQuestion({
   if (preview) {
     // Preview mode - student view
     return (
-      <div className={`border border-neutral-200 rounded-lg p-4 ${className}`}>
-        <label className="text-lg font-semibold block mb-4">
+      <div className={`rounded-lg border border-neutral-200 p-4 ${className}`}>
+        <label className="mb-4 block text-lg font-semibold">
           {question.title}
         </label>
         <Textarea
@@ -88,9 +89,9 @@ export function ShortTextQuestion({
   const hasTitle = question.title.trim().length > 0;
 
   return (
-    <div className={`border border-neutral-200 rounded-lg p-4 ${className}`}>
+    <div className={`rounded-lg border border-neutral-200 p-4 ${className}`}>
       {/* Question Title and Type */}
-      <div className="flex gap-3 items-start">
+      <div className="flex items-start gap-3">
         <div className="flex-1">
           <Input
             label="Question"
@@ -106,7 +107,7 @@ export function ShortTextQuestion({
           <div className="w-48">
             <label
               htmlFor={`question-type-${question.id}`}
-              className="block text-sm font-medium text-neutral-700 mb-1"
+              className="mb-1 block text-sm font-medium text-neutral-700"
             >
               Type
             </label>
@@ -114,7 +115,7 @@ export function ShortTextQuestion({
               id={`question-type-${question.id}`}
               value={question.type}
               onChange={(e) => onTypeChange(e.target.value as QuestionType)}
-              className="w-full px-3 py-2 text-sm border border-neutral-300 rounded-md bg-white text-neutral-700 hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+              className="focus:ring-primary-500 focus:border-primary-500 w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-700 transition-colors hover:border-neutral-400 focus:ring-2 focus:outline-none"
               aria-label={`Question ${questionNumber} type`}
             >
               <option value={QuestionType.SINGLE_CHOICE}>Single Choice</option>
@@ -130,8 +131,8 @@ export function ShortTextQuestion({
       {/* Preview Section */}
       {hasTitle && (
         <div className="mt-4 border-t border-neutral-200 pt-4">
-          <p className="text-sm font-medium text-neutral-700 mb-2">Preview:</p>
-          <p className="text-base text-neutral-900 mb-2">{question.title}</p>
+          <p className="mb-2 text-sm font-medium text-neutral-700">Preview:</p>
+          <p className="mb-2 text-base text-neutral-900">{question.title}</p>
           <Textarea
             label="Student answer area"
             placeholder="Type your answer here..."
@@ -144,7 +145,7 @@ export function ShortTextQuestion({
 
       {/* Validation Summary */}
       {hasTitle && (
-        <div className="mt-4 text-sm text-primary-600" role="status">
+        <div className="text-primary-600 mt-4 text-sm" role="status">
           ✓ Question is valid
         </div>
       )}

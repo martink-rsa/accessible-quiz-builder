@@ -1,7 +1,9 @@
-import { render, screen } from '@testing-library/react';
-import { renderAndCheckA11y, checkA11y } from '@/test-utils';
-import { ButtonGroup } from './ButtonGroup';
 import { Button } from '@components/Button';
+import { render, screen } from '@testing-library/react';
+
+import { checkA11y, renderAndCheckA11y } from '@/test-utils';
+
+import { ButtonGroup } from './ButtonGroup';
 
 describe('ButtonGroup', () => {
   describe('Accessibility', () => {

@@ -1,6 +1,7 @@
-import { Question, QuestionType, Option } from '@/types/quiz';
-import { QuestionEditor } from '@components/QuestionEditor';
 import { Button } from '@components/Button';
+import { QuestionEditor } from '@components/QuestionEditor';
+
+import { Option, Question, QuestionType } from '@/types/quiz';
 
 export interface QuestionListProps {
   /**
@@ -131,9 +132,9 @@ export function QuestionList({
 
       {/* Empty State */}
       {questions.length === 0 && (
-        <div className="text-center py-12 border-2 border-dashed border-neutral-300 rounded-lg">
-          <p className="text-neutral-600 mb-4">No questions yet</p>
-          <p className="text-neutral-500 text-sm mb-6">
+        <div className="rounded-lg border-2 border-dashed border-neutral-300 py-12 text-center">
+          <p className="mb-4 text-neutral-600">No questions yet</p>
+          <p className="mb-6 text-sm text-neutral-500">
             Get started by adding your first question to the quiz
           </p>
           <Button

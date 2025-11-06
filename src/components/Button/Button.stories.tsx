@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+
 import { Button } from './Button';
 
 const meta = {
@@ -159,7 +160,7 @@ export const IconOnly: Story = {
  */
 export const AllVariants: Story = {
   render: () => (
-    <div className="flex gap-4 items-center flex-wrap">
+    <div className="flex flex-wrap items-center gap-4">
       <Button variant="primary">Submit Answer</Button>
       <Button variant="secondary">Save Draft</Button>
       <Button variant="ghost">Cancel</Button>
@@ -173,7 +174,7 @@ export const AllVariants: Story = {
  */
 export const AllSizes: Story = {
   render: () => (
-    <div className="flex gap-4 items-center">
+    <div className="flex items-center gap-4">
       <Button size="sm">Add Question</Button>
       <Button size="md">Next Question</Button>
       <Button size="lg">Start Quiz</Button>
@@ -186,7 +187,7 @@ export const AllSizes: Story = {
  */
 export const AllStates: Story = {
   render: () => (
-    <div className="flex gap-4 items-center flex-wrap">
+    <div className="flex flex-wrap items-center gap-4">
       <Button>Submit Answer</Button>
       <Button disabled>Submit Answer</Button>
       <Button loading>Saving Quiz...</Button>
@@ -199,7 +200,7 @@ export const AllStates: Story = {
  */
 export const WithIcon: Story = {
   render: () => (
-    <div className="flex gap-4 items-center flex-wrap">
+    <div className="flex flex-wrap items-center gap-4">
       <Button variant="primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
-import { useState } from 'react';
-import { ButtonGroup } from './ButtonGroup';
 import { Button } from '@components/Button';
-import { Edit, Eye, AlignLeft, AlignCenter, AlignRight } from 'lucide-react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { AlignCenter, AlignLeft, AlignRight, Edit, Eye } from 'lucide-react';
+import { useState } from 'react';
+
+import { ButtonGroup } from './ButtonGroup';
 
 const meta = {
   title: 'Components/ButtonGroup',
@@ -64,7 +65,7 @@ export const WithIcons: Story = {
           onClick={() => setMode('edit')}
           aria-pressed={mode === 'edit'}
         >
-          <Edit className="w-4 h-4" />
+          <Edit className="h-4 w-4" />
           Edit
         </Button>
         <Button
@@ -72,7 +73,7 @@ export const WithIcons: Story = {
           onClick={() => setMode('preview')}
           aria-pressed={mode === 'preview'}
         >
-          <Eye className="w-4 h-4" />
+          <Eye className="h-4 w-4" />
           Preview
         </Button>
       </ButtonGroup>
@@ -100,7 +101,7 @@ export const AlignmentGroup: Story = {
           aria-pressed={alignment === 'left'}
           aria-label="Align left"
         >
-          <AlignLeft className="w-4 h-4" />
+          <AlignLeft className="h-4 w-4" />
         </Button>
         <Button
           variant={alignment === 'center' ? 'primary' : 'ghost'}
@@ -108,7 +109,7 @@ export const AlignmentGroup: Story = {
           aria-pressed={alignment === 'center'}
           aria-label="Align center"
         >
-          <AlignCenter className="w-4 h-4" />
+          <AlignCenter className="h-4 w-4" />
         </Button>
         <Button
           variant={alignment === 'right' ? 'primary' : 'ghost'}
@@ -116,7 +117,7 @@ export const AlignmentGroup: Story = {
           aria-pressed={alignment === 'right'}
           aria-label="Align right"
         >
-          <AlignRight className="w-4 h-4" />
+          <AlignRight className="h-4 w-4" />
         </Button>
       </ButtonGroup>
     );
@@ -169,7 +170,7 @@ export const MultipleGroups: Story = {
     'aria-label': 'View mode',
   },
   render: () => (
-    <div className="flex gap-4 flex-col items-start">
+    <div className="flex flex-col items-start gap-4">
       <ButtonGroup aria-label="View mode">
         <Button variant="primary">Edit</Button>
         <Button variant="ghost">Preview</Button>
