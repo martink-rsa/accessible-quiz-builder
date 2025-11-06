@@ -1,5 +1,7 @@
 import { Facebook, Github, Instagram, Linkedin, Twitter } from 'lucide-react';
 
+import logoSquare from '../../../assets/logo-black-square.png';
+
 export interface FooterProps {
   /**
    * Optional additional CSS classes
@@ -43,7 +45,7 @@ export function Footer({ className = '' }: FooterProps) {
         <div className="mb-6 flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-3">
             <img
-              src="/assets/logo-black-square.png"
+              src={logoSquare}
               alt="QUIZU - Accessible Quiz Builder"
               className="h-12 w-12"
             />
