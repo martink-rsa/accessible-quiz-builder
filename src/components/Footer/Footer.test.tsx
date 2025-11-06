@@ -15,7 +15,7 @@ describe('Footer', () => {
     render(<Footer />);
     const logo = screen.getByAltText('QUIZU - Accessible Quiz Builder');
     expect(logo).toBeInTheDocument();
-    expect(logo).toHaveAttribute('src', '/assets/logo-black-square.png');
+    expect(logo).toHaveAttribute('src', 'test-file-stub');
   });
 
   it('displays current year in copyright', () => {
